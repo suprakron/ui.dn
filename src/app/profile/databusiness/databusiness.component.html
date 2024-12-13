@@ -1,0 +1,109 @@
+<p>databusiness works!</p>
+<div class="dataarea">
+    <div class="tabmenuprofile">
+        <div class="editmenuprofile">
+            <i class="bi bi-person-circle"></i>
+            <div class="profile-text">
+                <p class="username">สิรวิชญ์</p>
+                <p class="edit-profile">แก้ไขข้อมูลส่วนตัว</p>
+            </div>
+        </div>
+
+        <div class="menuprofile">
+            <!-- Start Menu Profile -->
+            <ul class="menu-list">
+                <li>
+                    <input type="checkbox" id="chats" name="dropdowns">
+                    <label for="chats">
+                       <i class="fa fa-commenting" aria-hidden="true"></i>
+                       <a href="/profilemyself">บัญชีของฉัน</a>
+                       <i id="downarrow" class="fa fa-angle-down" aria-hidden="true"></i>
+                       <i id="uparrow" class="fa fa-angle-up" aria-hidden="true"></i>
+                    </label>
+                    <ul class="drop">
+                       <li>
+                          <input type="radio" id="regularchat" name="menu">
+                          <label for="regularchat">
+                             ข้อมูลส้วนบุคคล
+                          </label>
+                       </li>
+                       <li>
+                          <input type="radio" id="chatbox" name="menu">
+                          <label for="chatbox">
+                            <a href="/accountbank">   บัญชีธนาคาร & บัตร</a>
+                             
+                          </label>
+                       </li>
+                       <li>
+                        <input type="radio" id="chatbox" name="menu">
+                        <label for="chatbox">
+                            <a href="/databusiness">ข้อมูลธุรกิจ</a>
+                        </label>
+                     </li>
+
+                     <li>
+                        <input type="radio" id="chatbox" name="menu">
+                        <label for="chatbox">
+                            <a href="/dataashipping">ข้อมูลการจัดส่ง</a>
+                        </label>
+                     </li>
+
+                     <li>
+                        <input type="radio" id="chatbox" name="menu">
+                        <label for="chatbox">
+                            เปลี่ยนรหัสผ่าน
+                        </label>
+                     </li>
+                    </ul>
+                 </li>
+                
+                <li> 
+                    <input type="checkbox" id="orders-menu" name="dropdowns">
+                    <label for="orders-menu" class="menu-label">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <!-- <a [routerLink]="/phurchaseorder">ไปที่ใบสั่งซื้อ</a> -->
+                        <a href="/phurchaseorder">ไปที่ใบสั่งซื้อ</a>
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </label>
+
+           
+                  
+                </li>
+                <li>
+                    <input type="checkbox" id="favorites-menu" name="dropdowns">
+                    <label for="favorites-menu" class="menu-label">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <a href="/favoriteorder">สินค้าที่ถูกใจ</a>
+                        
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </label>
+                </li>
+            </ul>
+           
+        </div>
+        
+    </div>
+
+    <div class="textinputprofile">
+         
+        <p> ข้อมูลธุรกิจ</p>
+        <hr class="rounded">
+        <form>
+            <div class="wrapper">
+                <label for="bank-name">ชื่อบัญชีธนาคาร</label>
+                <input type="text" id="bank-name" placeholder="">
+            </div>
+            <div class="wrapper">
+                <label for="bank-account-number">หมายเลขบัญชีธนาคาร</label>
+                <input type="text" id="bank-account-number" placeholder="">
+            </div>
+            <div class="wrapper">
+                <label for="bank">เลือกธนาคาร</label>
+                <select id="bank" name="bank">
+                    <option value="bangkok">BANKOK BANK PUBLIC COMPANY LTD.</option>
+                </select>
+            </div>
+            <button type="submit">บันทึก</button>
+        </form>
+    </div>
+</div>

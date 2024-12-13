@@ -1,0 +1,126 @@
+<div class="dataarea">
+    <div class="tabmenuprofile">
+        <div class="editmenuprofile">
+            <i class="bi bi-person-circle"></i>
+            <div class="profile-text">
+                <p class="username">สิรวิชญ์</p>
+                <p class="edit-profile">แก้ไขข้อมูลส่วนตัว</p>
+            </div>
+        </div>
+
+        <div class="menuprofile">
+            <!-- Start Menu Profile -->
+            <ul class="menu-list">
+                <li>
+                    <input type="checkbox" id="chats" name="dropdowns">
+                    <label for="chats">
+                       <i class="fa fa-commenting" aria-hidden="true"></i>
+                       <a href="/profilemyself">บัญชีของฉัน</a>
+                       <i id="downarrow" class="fa fa-angle-down" aria-hidden="true"></i>
+                       <i id="uparrow" class="fa fa-angle-up" aria-hidden="true"></i>
+                    </label>
+                    <ul class="drop">
+                       <li>
+                          <input type="radio" id="regularchat" name="menu">
+                          <label for="regularchat">
+                            <a href="/datapersonnal">ข้อมูลส้วนบุคคล</a>
+                             
+                          </label>
+                       </li>
+                       <li>
+                          <input type="radio" id="chatbox" name="menu">
+                          <label for="chatbox">
+                            <a href="/accountbank">   บัญชีธนาคาร & บัตร</a>
+                          </label>
+                       </li>
+                       <li>
+                        <input type="radio" id="chatbox" name="menu">
+                        <label for="chatbox">
+                            <a href="/databusiness">ข้อมูลธุรกิจ</a>
+                        </label>
+                     </li>
+
+                     <li>
+                        <input type="radio" id="chatbox" name="menu">
+                        <label for="chatbox">
+                            <a href="/dataashipping">ข้อมูลการจัดส่ง</a>
+                        </label>
+                     </li>
+
+                     <li>
+                        <input type="radio" id="chatbox" name="menu">
+                        <label for="chatbox">
+                            เปลี่ยนรหัสผ่าน
+                        </label>
+                     </li>
+                    </ul>
+                 </li>
+                
+                <li> 
+                    <input type="checkbox" id="orders-menu" name="dropdowns">
+                    <label for="orders-menu" class="menu-label">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <!-- <a [routerLink]="/phurchaseorder">ไปที่ใบสั่งซื้อ</a> -->
+                        <a href="/phurchaseorder">ไปที่ใบสั่งซื้อ</a>
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </label>
+
+           
+                  
+                </li>
+                <li>
+                    <input type="checkbox" id="favorites-menu" name="dropdowns">
+                    <label for="favorites-menu" class="menu-label">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <a href="/favoriteorder">สินค้าที่ถูกใจ</a>
+                        
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </label>
+                </li>
+            </ul>
+           
+        </div>
+        
+    </div>
+
+    <div class="profile-form">
+        <div class="header">
+          <h2>ข้อมูลส่วนบุคคล</h2>
+          <p>จัดการข้อมูลส่วนตัวของคุณเพื่อความปลอดภัยของบัญชีผู้ใช้นี้</p>
+        </div>
+      
+        <hr />
+      
+        <div class="form-content">
+          <div class="form-left">
+            <label>ชื่อ - นามสกุล*</label>
+            <input type="text" placeholder="สิริวิชญ์" required />
+      
+            <label>หมายเลขโทรศัพท์*</label>
+            <input type="text" placeholder="080-245-5193" required />
+      
+            <label>อีเมล*</label>
+            <input type="email" placeholder="testui@gmail.com" required />
+      
+            <label>เพศ</label>
+            <div class="gender-options">
+              <label><input type="radio" name="gender" checked /> ชาย</label>
+              <label><input type="radio" name="gender" /> หญิง</label>
+              <label><input type="radio" name="gender" /> อื่นๆ</label>
+            </div>
+          </div>
+      
+          <div class="form-right">
+            <div class="profile-picture">
+              <div class="image-placeholder"></div>
+              <button>เลือกรูป</button>
+              <p>ขนาดไฟล์: สูงสุด 1 MB<br />ไฟล์ที่รองรับ: JPEG, PNG</p>
+            </div>
+          </div>
+        </div>
+      
+        <button class="save-button">บันทึก</button>
+      </div>
+      
+</div>
+
