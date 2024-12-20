@@ -1,109 +1,119 @@
 <div class="dataarea">
-    <div class="tabmenuprofile">
-        <div class="editmenuprofile">
-            <i class="bi bi-person-circle"></i>
-            <div class="profile-text">
-                <p class="username">สิรวิชญ์</p>
-                <p class="edit-profile">แก้ไขข้อมูลส่วนตัว</p>
+    <div class="profile-container">
+  
+      <!-- ส่วนโปรไฟล์ -->
+      <div class="profile-section">
+        <div class="profile-icon">
+          <i class="icon-user"></i>
+        </div>
+        <div class="profile-details">
+          <p class="profile-name">สิริวิชญ์</p>
+          <button class="edit-button" aria-label="Edit profile information">
+            <i class="icon-edit"></i> แก้ไขข้อมูลส่วนตัว
+          </button>
+  
+        </div>
+      </div>
+  
+      <!-- ส่วนเมนู -->
+      <div class="menu-section">
+        <div class="menu-item">
+          <!-- เมนูหลัก: บัญชีของฉัน -->
+          <div class="menu-icon-text">
+            <i class="icon-user"></i>
+            <p>บัญชีของฉัน</p>
+            <i class="fa fa-angle-down toggle-icon" aria-hidden="true"></i>
+            <div class="drop">
+                <ul>
+                    <li>
+                        <input type="radio" id="personalInfo" name="menu" />
+                        <label for="personalInfo">ข้อมูลส่วนบุคคล</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="accountBank" name="menu" />
+                        <label for="accountBank"><a href="/accountbank">บัญชีธนาคาร & บัตร</a></label>
+                    </li>
+                    <li>
+                        <input type="radio" id="businessInfo" name="menu" />
+                        <label for="businessInfo"><a href="/databusiness">ข้อมูลธุรกิจ</a></label>
+                    </li>
+                    <li>
+                        <input type="radio" id="shippingInfo" name="menu" />
+                        <label for="shippingInfo"><a href="/dataashipping">ข้อมูลการจัดส่ง</a></label>
+                    </li>
+                    <li>
+                        <input type="radio" id="changePassword" name="menu" />
+                        <label for="changePassword">เปลี่ยนรหัสผ่าน</label>
+                    </li>
+                </ul>
             </div>
         </div>
-
-        <div class="menuprofile">
-            <!-- Start Menu Profile -->
-            <ul class="menu-list">
-                <li>
-                    <input type="checkbox" id="chats" name="dropdowns">
-                    <label for="chats">
-                       <i class="fa fa-commenting" aria-hidden="true"></i>
-                       บัญชีของฉัน
-                       <!-- <a href="/profilemyself">บัญชีของฉัน</a> -->
-                       <i id="downarrow" class="fa fa-angle-down" aria-hidden="true"></i>
-                       <i id="uparrow" class="fa fa-angle-up" aria-hidden="true"></i>
-                    </label>
-                    <ul class="drop">
-                       <li>
-                          <input type="radio" id="regularchat" name="menu">
-                          <label for="regularchat">
-                            <a href="/datapersonnal">ข้อมูลส้วนบุคคล</a>
-                             
-                          </label>
-                       </li>
-                       <li>
-                          <input type="radio" id="chatbox" name="menu">
-                          <label for="chatbox">
-                            <a href="/accountbank">   บัญชีธนาคาร & บัตร</a>
-                          </label>
-                       </li>
-                       <li>
-                        <input type="radio" id="chatbox" name="menu">
-                        <label for="chatbox">
-                            <a href="/databusiness">ข้อมูลธุรกิจ</a>
-                        </label>
-                     </li>
-
-                     <li>
-                        <input type="radio" id="chatbox" name="menu">
-                        <label for="chatbox">
-                            <a href="/dataashipping">ข้อมูลการจัดส่ง</a>
-                        </label>
-                     </li>
-
-                     <li>
-                        <input type="radio" id="chatbox" name="menu">
-                        <label for="chatbox">
-                            เปลี่ยนรหัสผ่าน
-                        </label>
-                     </li>
-                    </ul>
-                 </li>
-                
-                <li> 
-                    <input type="checkbox" id="orders-menu" name="dropdowns">
-                    <label for="orders-menu" class="menu-label">
-                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                        <!-- <a [routerLink]="/phurchaseorder">ไปที่ใบสั่งซื้อ</a> -->
-                        <a href="/phurchaseorder">ไปที่ใบสั่งซื้อ</a>
-                        <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    </label>
-
-           
-                  
-                </li>
-                <li>
-                    <input type="checkbox" id="favorites-menu" name="dropdowns">
-                    <label for="favorites-menu" class="menu-label">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                        <a href="/favoriteorder">สินค้าที่ถูกใจ</a>
-                        
-                        <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    </label>
-                </li>
-            </ul>
-           
+ 
+  
+          <!-- เมนูอื่น ๆ -->
+          <div class="menu-icon-text">
+            <i class="icon-order"></i>
+            <a href="/phurchaseorder">
+              <p>ใบสั่งซื้อ</p>
+            </a>
+          </div>
+          <div class="menu-icon-text">
+            <i class="icon-heart"></i>
+            <a href="/favoriteorder">
+              <p>สินค้าที่ถูกใจ</p>
+            </a>
+  
+          </div>
         </div>
-        
+      </div>
+  
     </div>
 
-    <div class="textinputprofile">
-        <h3>บัญชีธนาคาร & บัตร</h3>
-        <p> สินค้าที่ถูกใจจจจจจจจจจจจจจจจจจจจจจ</p>
-        <hr class="rounded">
-        <form>
-            <div class="wrapper">
-                <label for="bank-name">ชื่อบัญชีธนาคาร</label>
-                <input type="text" id="bank-name" placeholder="">
+    <div class="profile-from">
+      <div class="header">
+        <h2>ข้อมูลส่วนบุคคล</h2>
+        <p>จัดการข้อมูลส่วนตัวของคุณเพื่อความปลอดภัยของบัญชีผู้ใช้นี้</p>
+      </div>
+  
+      <hr />
+  
+      <div class="form-content">
+        <div class="form-left">
+          <label>ชื่อ - นามสกุล*</label>
+          <input type="text" placeholder="สิริวิชญ์" required />
+  
+          <label>หมายเลขโทรศัพท์*</label>
+          <input type="text" placeholder="080-245-5193" required />
+  
+          <label>อีเมล*</label>
+          <input type="email" placeholder="testui@gmail.com" required />
+  
+          <label>เพศ</label>
+          <div class="gender-options">
+            <label><input type="radio" name="gender" checked /> ชาย</label>
+            <label><input type="radio" name="gender" /> หญิง</label>
+            <label><input type="radio" name="gender" /> อื่นๆ</label>
+          </div>
+        </div>
+        <hr />
+  
+  
+  
+        <div class="form-right">
+          <div class="profile-picture">
+            <div class="image-placeholder">
+              <span>+</span>
             </div>
-            <div class="wrapper">
-                <label for="bank-account-number">หมายเลขบัญชีธนาคาร</label>
-                <input type="text" id="bank-account-number" placeholder="">
-            </div>
-            <div class="wrapper">
-                <label for="bank">เลือกธนาคาร</label>
-                <select id="bank" name="bank">
-                    <option value="bangkok">BANKOK BANK PUBLIC COMPANY LTD.</option>
-                </select>
-            </div>
-            <button type="submit">บันทึก</button>
-        </form>
+  
+            <input type="file" name="file" id="file-upload" />
+            <label for="file-upload" class="file-label">อัปโหลดรูปภาพ</label>
+            <p class="file-info">ขนาดไฟล์: สูงสุด 1 MB<br />ไฟล์ที่รองรับ: JPEG, PNG</p>
+          </div>
+        </div>
+  
+      </div>
+  
+      <button class="save-button">บันทึก</button>
     </div>
-</div>
+  
+  </div>

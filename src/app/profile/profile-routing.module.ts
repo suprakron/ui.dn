@@ -22,10 +22,7 @@ const routes: Routes = [
     path: 'phurchaseorder',
     component: PhurchaseorderComponent
   },
-  {
-    path: 'phurchaseorder',
-    component: PhurchaseorderComponent
-  },
+
   {
     path: 'accountbank',
     component: AccountbankComponent

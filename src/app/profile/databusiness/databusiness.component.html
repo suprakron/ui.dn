@@ -1,109 +1,201 @@
-<p>databusiness works!</p>
 <div class="dataarea">
-    <div class="tabmenuprofile">
-        <div class="editmenuprofile">
-            <i class="bi bi-person-circle"></i>
-            <div class="profile-text">
-                <p class="username">สิรวิชญ์</p>
-                <p class="edit-profile">แก้ไขข้อมูลส่วนตัว</p>
+
+    <div class="profile-container">
+
+        <!-- ส่วนโปรไฟล์ -->
+        <div class="profile-section">
+            <div class="profile-icon">
+                <i class="icon-user"></i>
+            </div>
+            <div class="profile-details">
+                <p class="profile-name">สิริวิชญ์</p>
+                <button class="edit-button" aria-label="Edit profile information">
+                    <i class="icon-edit"></i> แก้ไขข้อมูลส่วนตัว
+                </button>
+
             </div>
         </div>
 
-        <div class="menuprofile">
-            <!-- Start Menu Profile -->
-            <ul class="menu-list">
-                <li>
-                    <input type="checkbox" id="chats" name="dropdowns">
-                    <label for="chats">
-                       <i class="fa fa-commenting" aria-hidden="true"></i>
-                       <a href="/profilemyself">บัญชีของฉัน</a>
-                       <i id="downarrow" class="fa fa-angle-down" aria-hidden="true"></i>
-                       <i id="uparrow" class="fa fa-angle-up" aria-hidden="true"></i>
-                    </label>
+        <!-- ส่วนเมนู -->
+        <div class="menu-section">
+            <div class="menu-item">
+                <!-- เมนูหลัก: บัญชีของฉัน -->
+                <div class="menu-icon-text">
+                    <i class="icon-user"></i>
+                    <p> <a href="/profilemyself"></a>บัญชีของฉัน </p>
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    <i class="fa fa-angle-up" aria-hidden="true"></i>
                     <ul class="drop">
-                       <li>
-                          <input type="radio" id="regularchat" name="menu">
-                          <label for="regularchat">
-                             ข้อมูลส้วนบุคคล
-                          </label>
-                       </li>
-                       <li>
-                          <input type="radio" id="chatbox" name="menu">
-                          <label for="chatbox">
-                            <a href="/accountbank">   บัญชีธนาคาร & บัตร</a>
-                             
-                          </label>
-                       </li>
-                       <li>
-                        <input type="radio" id="chatbox" name="menu">
-                        <label for="chatbox">
-                            <a href="/databusiness">ข้อมูลธุรกิจ</a>
-                        </label>
-                     </li>
-
-                     <li>
-                        <input type="radio" id="chatbox" name="menu">
-                        <label for="chatbox">
-                            <a href="/dataashipping">ข้อมูลการจัดส่ง</a>
-                        </label>
-                     </li>
-
-                     <li>
-                        <input type="radio" id="chatbox" name="menu">
-                        <label for="chatbox">
-                            เปลี่ยนรหัสผ่าน
-                        </label>
-                     </li>
+                        <li>
+                            <input type="radio" id="personalInfo" name="menu" />
+                            <label for="personalInfo">ข้อมูลส่วนบุคคล</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="accountBank" name="menu" />
+                            <label for="accountBank"><a href="/accountbank">บัญชีธนาคาร & บัตร</a></label>
+                        </li>
+                        <li>
+                            <input type="radio" id="businessInfo" name="menu" />
+                            <label for="businessInfo"><a href="/databusiness">ข้อมูลธุรกิจ</a></label>
+                        </li>
+                        <li>
+                            <input type="radio" id="shippingInfo" name="menu" />
+                            <label for="shippingInfo"><a href="/dataashipping">ข้อมูลการจัดส่ง</a></label>
+                        </li>
+                        <li>
+                            <input type="radio" id="changePassword" name="menu" />
+                            <label for="changePassword">เปลี่ยนรหัสผ่าน</label>
+                        </li>
                     </ul>
-                 </li>
-                
-                <li> 
-                    <input type="checkbox" id="orders-menu" name="dropdowns">
-                    <label for="orders-menu" class="menu-label">
-                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                        <!-- <a [routerLink]="/phurchaseorder">ไปที่ใบสั่งซื้อ</a> -->
-                        <a href="/phurchaseorder">ไปที่ใบสั่งซื้อ</a>
-                        <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    </label>
+                </div>
 
-           
-                  
-                </li>
-                <li>
-                    <input type="checkbox" id="favorites-menu" name="dropdowns">
-                    <label for="favorites-menu" class="menu-label">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                        <a href="/favoriteorder">สินค้าที่ถูกใจ</a>
-                        
-                        <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    </label>
-                </li>
-            </ul>
-           
+                <!-- เมนูอื่น ๆ -->
+                <div class="menu-icon-text">
+                    <i class="icon-order"></i>
+                    <a href="/phurchaseorder">
+                        <p>ใบสั่งซื้อ</p>
+                    </a>
+                </div>
+                <div class="menu-icon-text">
+                    <i class="icon-heart"></i>
+                    <a href="/favoriteorder">
+                        <p>สินค้าที่ถูกใจ</p>
+                    </a>
+
+                </div>
+            </div>
         </div>
-        
+
     </div>
 
-    <div class="textinputprofile">
+    <div class="orderright">
+
+        <div class="order-page">
+            <div class="header">
+                <h2>ข้อมูลธุรกิจ</h2>
+                <p>จัดการข้อมูลคุรเพื่อความปลอดภัยของบัญชีผู้ใช้นี้</p>
+            </div>
+            <hr/>
          
-        <p> ข้อมูลธุรกิจ</p>
-        <hr class="rounded">
-        <form>
-            <div class="wrapper">
-                <label for="bank-name">ชื่อบัญชีธนาคาร</label>
-                <input type="text" id="bank-name" placeholder="">
+                <div class="form-group">
+                    <input type="text" placeholder="ชื่อบัญชีธนาคาร" class="input-field" />
+                    <input type="text" placeholder="หมายเลขบัญชีธนาคาร" class="input-field" />
+                    <input type="text" placeholder="ชื่อผู้มีอำนาจลงนาม" class="input-field" />
+                </div>
+        </div>
+
+
+
+        <div class="order-page-business">
+            <div class="header">
+                <h2>ใบรับรองการลงทะเบียนธุรกิจ</h2>
             </div>
-            <div class="wrapper">
-                <label for="bank-account-number">หมายเลขบัญชีธนาคาร</label>
-                <input type="text" id="bank-account-number" placeholder="">
+            <div class="order-listbank">
+                <div class="form-groupbank">
+                    <input type="text" placeholder="ชื่อบัญชีธนาคาร" class="input-fieldbank" />
+                </div>
             </div>
-            <div class="wrapper">
-                <label for="bank">เลือกธนาคาร</label>
-                <select id="bank" name="bank">
-                    <option value="bangkok">BANKOK BANK PUBLIC COMPANY LTD.</option>
-                </select>
+
+            <div class="form-group-time">
+                <div class="custom-date-input">
+                    <p class="date-display">1/11/2024</p>
+                    <i class="bi bi-calendar calendar-icon"></i>
+                </div>
+             
+                <select type="text" class="input-field-time">
+                    <option value="">ที่อยู่</option>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                  </select>
             </div>
-            <button type="submit">บันทึก</button>
-        </form>
+            <div class="import-file-time">
+                <div class="dropzone">
+                    <img src="http://100dayscss.com/codepen/upload.svg" alt="Upload Icon" class="upload-icon" />
+                    <input type="file" class="uploadfile" />
+                    <p>ลากและวางไฟล์ที่นี่ </p>
+                    <p>ไฟล์ PDF, PNG, JPEG, JPG, DOC หรือ DOCX - สูงสุด 3 ไฟล์</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="order-reportpill">
+            <div class="header">
+                <h2>ใบอนุญาตสำหรับธุรกิจขายยา</h2>
+            </div>
+
+            <div class="order-listbank">
+                <div class="form-groupbank">
+                    <input type="text" placeholder="ชื่อบัญชีธนาคาร" class="input-fieldbank" />
+                </div>
+            </div>
+
+            <div class="form-group-time">
+                <div class="custom-date-input">
+                    <p class="date-display">1/11/2024</p>
+                    <i class="bi bi-calendar calendar-icon"></i>
+                </div>
+              
+                <select type="text" class="input-field-time">
+                    <option value="">ที่อยู่</option>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                  </select>
+            </div>
+            <div class="import-file-time">
+                <div class="dropzone">
+                    <img src="http://100dayscss.com/codepen/upload.svg" alt="Upload Icon" class="upload-icon" />
+                    <input type="file" class="uploadfile" />
+                    <p>ลากและวางไฟล์ที่นี่ </p>
+                    <p>ไฟล์ PDF, PNG, JPEG, JPG, DOC หรือ DOCX - สูงสุด 3 ไฟล์</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="order-detail">
+           
+            <div class="order-listbank">
+                
+                <div class="form-groupbank">
+                    <!-- <input type="text" placeholder="ใบอนุญาติอื่น" class="input-fieldbank" /> -->
+
+                    <select type="text" class="input-fieldbank">
+                        <option value="">ใบอนุญาติอื่น</option>
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="hamster">Hamster</option>
+                        <option value="parrot">Parrot</option>
+                        <option value="spider">Spider</option>
+                        <option value="goldfish">Goldfish</option>
+                      </select>
+                </div>
+                <div class="form-groupbank">
+                    <input type="text" placeholder="ชื่อบัญชีธนาคาร" class="input-fieldbank" />
+                </div>
+                <div class="form-groupbank">
+                    <select type="text" class="input-fieldbank">
+                        <option value="">ที่อยู่</option>
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="hamster">Hamster</option>
+                        <option value="parrot">Parrot</option>
+                        <option value="spider">Spider</option>
+                        <option value="goldfish">Goldfish</option>
+                      </select>
+                </div>
+                <div class="form-groupbank">
+                    <input type="text" placeholder="ชื่อบัญชีธนาคาร" class="input-fieldbank" />
+                </div>
+            </div>
+         
+           
+            
+        </div>
+ 
+        <div class="btn-save">
+            <p> บันทึก</p>
+        </div>
     </div>
+
 </div>
