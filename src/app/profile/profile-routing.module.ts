@@ -7,6 +7,7 @@ import { PhurchaseorderComponent } from './phurchaseorder/phurchaseorder.compone
 import { AccountbankComponent } from './accountbank/accountbank.component';
 import { DatabusinessComponent } from './databusiness/databusiness.component';
 import { DataashippingComponent } from './dataashipping/dataashipping.component';
+import { CouponComponent } from './coupon/coupon.component';
  
 
 const routes: Routes = [
@@ -35,6 +36,12 @@ const routes: Routes = [
     path: 'dataashipping',
     component: DataashippingComponent
   },
+  {
+    path: 'coupon',
+    component: CouponComponent
+  },
+
+
  
  
 ];

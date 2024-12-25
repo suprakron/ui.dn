@@ -7,6 +7,7 @@ import { DatapersonnalComponent } from './profile/datapersonnal/datapersonnal.co
 import { AccountbankComponent } from './profile/accountbank/accountbank.component';
 import { DatabusinessComponent } from './profile/databusiness/databusiness.component';
 import { DataashippingComponent } from './profile/dataashipping/dataashipping.component';
+import { CouponComponent } from './profile/coupon/coupon.component';
  
 
  
@@ -27,6 +28,7 @@ export const routes: Routes = [
       { path: 'accountbank', component: AccountbankComponent },
       { path: 'databusiness', component: DatabusinessComponent },
       { path: 'dataashipping', component: DataashippingComponent },
+      { path: 'coupon', component: CouponComponent },
  
     {
         path:'',

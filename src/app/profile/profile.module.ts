@@ -9,6 +9,7 @@ import { ProfilemyselfComponent } from './profilemyself/profilemyself.component'
 import { DatapersonnalComponent } from './datapersonnal/datapersonnal.component';
 import { AccountbankComponent } from './accountbank/accountbank.component';
 import { DataashippingComponent } from './dataashipping/dataashipping.component';
+import { CouponComponent } from './coupon/coupon.component';
 
 
 @NgModule({
@@ -18,9 +19,8 @@ import { DataashippingComponent } from './dataashipping/dataashipping.component'
     PhurchaseorderComponent,
     DatapersonnalComponent,
     AccountbankComponent,
-    DataashippingComponent
-
-
+    DataashippingComponent,
+    CouponComponent
   ],
     imports: [
         CommonModule,

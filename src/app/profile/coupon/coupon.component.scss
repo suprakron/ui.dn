@@ -1,0 +1,284 @@
+ .dataarea {
+
+     background-color: rgb(240, 240, 240);
+     padding: 20px;
+     margin: 20px;
+     border-radius: 10px;
+     display: flex;
+     gap: 10px;
+ }
+
+ .profile-container {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     background-color: #fff;
+     padding: 20px;
+     border-radius: 10px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+
+ .profile-section {
+     display: flex;
+     align-items: center;
+     gap: 15px;
+ }
+
+ .profile-icon {
+     width: 60px;
+     height: 60px;
+     background-color: #f2f2f2;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 1.5rem;
+     color: #555;
+ }
+
+ .profile-name {
+     font-size: 1.25rem;
+     font-weight: bold;
+     margin: 0;
+ }
+
+ .edit-button {
+     display: flex;
+     align-items: center;
+     gap: 0.5rem;
+     font-size: 0.875rem;
+     color: #007bff;
+     background: none;
+     border: none;
+     cursor: pointer;
+ }
+
+ .edit-button:hover {
+     text-decoration: underline;
+ }
+
+ .menu-section {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+ }
+
+ .menu-icon-text {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     padding: 10px;
+     background-color: #fff;
+     border-radius: 8px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+ }
+
+ .menu-icon-text:hover {
+     background-color: #f8f8f8;
+ }
+
+ .menu-icon-text p {
+     margin: 0;
+     font-size: 1rem;
+ }
+
+
+ .detail-coupon {
+     display: grid;
+
+     .detail-container {
+         display: flex;
+         flex-direction: column;
+         gap: 20px;
+         background-color: #ffffff;
+         width: 1500px;
+         padding: 20px;
+         border-radius: 10px;
+         margin-bottom: 10px;
+
+         .coupons {
+             display: flex;
+             gap: 10px;
+             flex-direction: column;
+
+             .cou {
+                 display: flex;
+                 gap: 10px;
+
+                 hr {
+                     margin: 20px 0;
+                     border: 0.5px solid #161616;
+                 }
+
+
+                 .coupon-card {
+                     display: flex;
+                     background: #ffffff;
+                     border-radius: 16px;
+                     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                     overflow: hidden;
+                     margin: 40px 0;
+                     border: 1px solid #e0e0e0;
+                 }
+
+                 .coupon-left {
+                     background: #6a4ad5;
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                     padding: 20px;
+                     position: relative;
+                     width: 120px;
+                 }
+
+                 .coupon-left::before {
+                     content: '';
+                     position: absolute;
+                     top: -3px;
+                     left: -10px;
+                     width: 20px;
+                     height: 20px;
+                     background: #ffffff;
+                     border-radius: 50%;
+                     transform: translateY(-10%);
+                     box-shadow:
+                         0 45px 0 0 #ffffff,
+                         0 95px 0 0 #ffffff,
+                         0 138px 0 0 #ffffff;
+                 }
+
+                 .coupon-right {
+                     align-items: center;
+                     justify-content: center;
+                     padding: 20px;
+                     position: relative;
+                     width: 300px;
+                 }
+                 .coupon-right::before {
+                    content: '';
+                    position: absolute;
+                    top: -3px;
+                    right: -10px;
+                    width: 25px;
+                    height: 25px;
+                    background: #941f1f;
+                    border-radius: 50%;
+                    transform: translateY(-10%);
+                    box-shadow:
+                        0 45px 0 0 #941f1f,
+                        0 95px 0 0 #941f1f, 
+                        0 138px 0 0 #941f1f;
+                }
+                
+                 .coupon-logo {
+                     max-width: 80px;
+                     height: auto;
+                 }
+
+       
+
+                 .coupon-title {
+                     font-size: 1.25rem;
+                     font-weight: bold;
+                     margin: 0 0 10px;
+                 }
+
+                 .coupon-min {
+                     font-size: 1rem;
+                     color: #777;
+                     margin: 0 0 8px;
+                 }
+
+                 .coupon-expiry {
+                     font-size: 0.875rem;
+                     color: #555;
+                 }
+
+                 .coupon-expiry .highlight {
+                     font-weight: bold;
+                     color: #ff6f61;
+                 }
+
+                 .coupon-terms {
+                     color: #6a4ad5;
+                     text-decoration: none;
+                     font-size: 0.875rem;
+                 }
+
+                 .coupon-terms:hover {
+                     text-decoration: underline;
+                 }
+             }
+         }
+     }
+ }
+
+ .history {
+     width: 100%;
+     border-collapse: collapse;
+     background: #fff;
+     border-radius: 10px;
+     overflow: hidden;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+     th,
+     td {
+         padding: 15px;
+         text-align: left;
+         border-bottom: 1px solid #ddd;
+     }
+
+     th {
+
+         font-weight: bold;
+
+         h3 {
+             font-size: 30;
+         }
+     }
+
+     tr:hover {
+         background-color: #f1f1f1;
+     }
+
+     .table-header {
+         background-color: #6a4ad5;
+         color: #fff;
+         text-align: center;
+         font-size: 1.25rem;
+         font-weight: bold;
+         border-bottom: none;
+     }
+
+     thead tr:first-child th {
+         border-bottom: none;
+     }
+
+ }
+
+
+
+
+
+
+
+ @media (max-width: 768px) {
+     .profile-container {
+         padding: 15px;
+     }
+
+     .menu-icon-text {
+         flex-direction: column;
+         align-items: flex-start;
+     }
+
+     .coupon-card {
+         flex-direction: column;
+     }
+
+     .coupon-left {
+         border-radius: 0;
+     }
+ }
