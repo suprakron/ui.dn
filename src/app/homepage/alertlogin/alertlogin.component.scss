@@ -1,0 +1,117 @@
+/* Style for container-login */
+.container-login {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .title-logo {
+    margin-bottom: 20px;
+  }
+  
+  .title-logo .logo {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .title-logo p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .input-detail {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .input-detail .name,
+  .input-detail .password {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-detail p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .input-detail input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+    width: 100%;
+  }
+  
+  .btn-group {
+    width: 100%;
+  }
+  
+  .btn-group .btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  
+  .actions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .actions .btn {
+    padding: 12px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 8px;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+  
+  .actions .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .actions .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .actions .btn-outline-primary {
+    background-color: transparent;
+    border: 2px solid #007bff;
+    color: #007bff;
+  }
+  
+  .actions .btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 500px) {
+    .container-login {
+      width: 90%;
+    }
+  
+    .actions .btn {
+      font-size: 14px;
+    }
+  }
+  

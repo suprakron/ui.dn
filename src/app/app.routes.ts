@@ -8,6 +8,9 @@ import { AccountbankComponent } from './profile/accountbank/accountbank.componen
 import { DatabusinessComponent } from './profile/databusiness/databusiness.component';
 import { DataashippingComponent } from './profile/dataashipping/dataashipping.component';
 import { CouponComponent } from './profile/coupon/coupon.component';
+import { ForgotpasswordComponent } from './profile/forgotpassword/forgotpassword.component';
+import { AlertloginComponent } from './homepage/alertlogin/alertlogin.component';
+import { AlertregisterComponent } from './homepage/alertregister/alertregister.component';
  
 
  
@@ -17,6 +20,8 @@ export const routes: Routes = [
         path: 'homepage',
         loadChildren: () => import('./homepage/homepage.module').then(m => m.HomeModule)
       },
+      { path: 'signin', component: AlertloginComponent },
+      { path: 'signup', component: AlertregisterComponent },
       {
         path: 'profile',
         loadChildren: () => import('./profile/profile.module').then(m => m.ProfileModule)
@@ -27,8 +32,9 @@ export const routes: Routes = [
       { path: 'datapersonnal', component: DatapersonnalComponent },
       { path: 'accountbank', component: AccountbankComponent },
       { path: 'databusiness', component: DatabusinessComponent },
-      { path: 'dataashipping', component: DataashippingComponent },
+      { path: 'datashipping', component: DataashippingComponent },
       { path: 'coupon', component: CouponComponent },
+      { path: 'forgot', component: ForgotpasswordComponent },
  
     {
         path:'',

@@ -1,7 +1,6 @@
 <div class="dataarea">
 
     <div class="profile-container">
-
         <!-- ส่วนโปรไฟล์ -->
         <div class="profile-section">
             <div class="profile-icon">
@@ -9,63 +8,62 @@
             </div>
             <div class="profile-details">
                 <p class="profile-name">สิริวิชญ์</p>
-                <button class="edit-button" aria-label="Edit profile information">
-                    <i class="icon-edit"></i> แก้ไขข้อมูลส่วนตัว
-                </button>
-
+                <a href=""> <i class="bi bi-pencil-square"></i> แก้ไขข้อมูลส่วนตัว</a>
             </div>
         </div>
+
 
         <!-- ส่วนเมนู -->
         <div class="menu-section">
             <div class="menu-item">
-                <!-- เมนูหลัก: บัญชีของฉัน -->
-                <div class="menu-icon-text">
-                    <i class="icon-user"></i>
-                    <p> <a href="/profilemyself"></a>บัญชีของฉัน </p>
-                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    <i class="fa fa-angle-up" aria-hidden="true"></i>
-                    <ul class="drop">
-                        <li>
-                            <input type="radio" id="personalInfo" name="menu" />
-                            <label for="personalInfo">ข้อมูลส่วนบุคคล</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="accountBank" name="menu" />
-                            <label for="accountBank"><a href="/accountbank">บัญชีธนาคาร & บัตร</a></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="businessInfo" name="menu" />
-                            <label for="businessInfo"><a href="/databusiness">ข้อมูลธุรกิจ</a></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="shippingInfo" name="menu" />
-                            <label for="shippingInfo"><a href="/dataashipping">ข้อมูลการจัดส่ง</a></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="changePassword" name="menu" />
-                            <label for="changePassword">เปลี่ยนรหัสผ่าน</label>
-                        </li>
+                <li class="menu-item has-collapsible">
+                    <input type="checkbox" id="menu1">
+                    <label for="menu1" class="menu-link">
+                        <div class="icon"> <i class="fas fa-user"></i> </div>
+                        บัญชีของฉัน
+                    </label>
+                    <ul class="menu-child">
+                        <li class="menu-child-item"><a href="/datapersonnal">
+                                <p>ข้อมูลส่วนบุคคล</p>
+                            </a></li>
+                        <li class="menu-child-item"><a href="/accountbank">
+                                <p>บัญชีธนาคาร & บัตร</p>
+                            </a></li>
+                        <li class="menu-child-item"><a href="/databusiness">
+                                <p>ข้อมูลธุรกิจ</p>
+                            </a></li>
+                        <li class="menu-child-item"><a href="/datashipping">
+                                <p>ข้อมูลการจัดส่ง</p>
+                            </a></li>
+                        <li class="menu-child-item"><a href="/coupon">
+                                <p>คูปองของฉัน</p>
+                            </a></li>
+                        <li class="menu-child-item"><a href="/forgot">
+                                <p>เปลี่ยนรหัสผ่าน</p>
+                            </a></li>
                     </ul>
-                </div>
-
-                <!-- เมนูอื่น ๆ -->
-                <div class="menu-icon-text">
-                    <i class="icon-order"></i>
-                    <a href="/phurchaseorder">
-                        <p>ใบสั่งซื้อ</p>
-                    </a>
-                </div>
-                <div class="menu-icon-text">
-                    <i class="icon-heart"></i>
-                    <a href="/favoriteorder">
-                        <p>สินค้าที่ถูกใจ</p>
-                    </a>
-
-                </div>
+                </li>
+                <li class="menu-item has-collapsible">
+                    <input type="checkbox" id="menu2">
+                    <label for="menu2" class="menu-link">
+                        <div class="icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <a href=""></a>
+                        ใบสั่งซื้อ
+                    </label>
+                </li>
+                <li class="menu-item has-collapsible">
+                    <input type="checkbox" id="menu3">
+                    <label for="menu3" class="menu-link">
+                        <div class="icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        สินค้าที่ถูกใจ
+                    </label>
+                </li>
             </div>
         </div>
-
     </div>
 
     <div class="orderright">
@@ -75,42 +73,93 @@
                 <h2>ข้อมูลธุรกิจ</h2>
                 <p>จัดการข้อมูลคุรเพื่อความปลอดภัยของบัญชีผู้ใช้นี้</p>
             </div>
-            <hr/>
-         
-                <div class="form-group">
-                    <input type="text" placeholder="ชื่อบัญชีธนาคาร" class="input-field" />
-                    <input type="text" placeholder="หมายเลขบัญชีธนาคาร" class="input-field" />
-                    <input type="text" placeholder="ชื่อผู้มีอำนาจลงนาม" class="input-field" />
+            <hr />
+
+            <div class="form-group">
+                <div class="input-container">
+                    <label class="label">คุณคือ</label>
+                    <div class="input-wrapper">
+                        <input class="input-field" placeholder="ประเภทลูกค้า">
+                    </div>
                 </div>
+
+                <div class="input-container">
+                    <label class="label">ชื่อร้านยา/คลินิก</label>
+                    <div class="input-wrapper">
+                        <input class="input-field" placeholder="สิริวิชญ์">
+                    </div>
+                </div>
+
+                <div class="input-container">
+                    <label class="label">ชื่อผู้มีอำนาจลงนาม</label>
+                    <div class="input-wrapper">
+                        <input class="input-field" placeholder="สิริวิชญ์">
+                    </div>
+                </div>
+
+                <div class="input-container">
+                    <label class="label">ฝ่ายจัดซื้อ / ฝ่ายบัญชี / ผจก.ร้าน</label>
+                    <div class="input-wrapper">
+                        <input class="input-field" placeholder="สิริวิชญ์">
+                    </div>
+                </div>
+            </div>
         </div>
 
 
 
         <div class="order-page-business">
             <div class="header">
-                <h2>ใบรับรองการลงทะเบียนธุรกิจ</h2>
+                <h2>ใบรับรองบริษัท</h2>
             </div>
+
             <div class="order-listbank">
-                <div class="form-groupbank">
-                    <input type="text" placeholder="ชื่อบัญชีธนาคาร" class="input-fieldbank" />
+                <div class="input-container">
+                    <label class="label">หมายเลขอนุญาต</label>
+                    <div class="input-wrapper">
+                        <input class="input-field" placeholder="ประเภทลูกค้า">
+                    </div>
                 </div>
             </div>
 
             <div class="form-group-time">
-                <div class="custom-date-input">
-                    <p class="date-display">1/11/2024</p>
-                    <i class="bi bi-calendar calendar-icon"></i>
+                <div class="order-listbank">
+                    <div class="input-container">
+                        <label class="label">หมายเลขอนุญาต</label>
+                        <div class="input-wrapper">
+                            <input class="input-field" placeholder="1/11/2024">
+                            <i class="bi bi-calendar calendar-icon"></i>
+                        </div>
+                    </div>
                 </div>
-             
-                <select type="text" class="input-field-time">
-                    <option value="">ที่อยู่</option>
-                    <option value="dog">Dog</option>
-                    <option value="cat">Cat</option>
-                  </select>
+                <div class="address">
+                    <div class="input-address">
+                        <label class="label">ที่อยู่</label>
+                        <div class="input-wrapper">
+                            <select class="dropdown">
+                                <option value="category1"><i class="bi bi-bank"></i>BANKOK BANK PUBLIC COMPANY LTD.
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
             <div class="import-file-time">
                 <div class="dropzone">
-                    <img src="http://100dayscss.com/codepen/upload.svg" alt="Upload Icon" class="upload-icon" />
+                    <div class="icon-wrapper">
+                        <div class="icon-outline"></div>
+                        <div class="image-symbol">
+                          <div class="triangle"></div>
+                          <div class="circle"></div>
+                        </div>
+                        <div class="plus-symbol">
+                          <div class="vertical"></div>
+                          <div class="horizontal"></div>
+                        </div>
+                      </div>
+                    <!-- <img src="http://100dayscss.com/codepen/upload.svg" alt="Upload Icon" class="upload-icon" /> -->
                     <input type="file" class="uploadfile" />
                     <p>ลากและวางไฟล์ที่นี่ </p>
                     <p>ไฟล์ PDF, PNG, JPEG, JPG, DOC หรือ DOCX - สูงสุด 3 ไฟล์</p>
@@ -118,31 +167,44 @@
             </div>
         </div>
 
-
-
-        <div class="order-reportpill">
+      <div class="order-reportpill">
             <div class="header">
-                <h2>ใบอนุญาตสำหรับธุรกิจขายยา</h2>
+                <h2>ใบอนุญาตสำหรับธุรกิจขายยา / คลีนิก</h2>
             </div>
-
+            
             <div class="order-listbank">
-                <div class="form-groupbank">
-                    <input type="text" placeholder="ชื่อบัญชีธนาคาร" class="input-fieldbank" />
+                <div class="input-container">
+                    <label class="label">หมายเลขอนุญาต</label>
+                    <div class="input-wrapper">
+                        <input class="input-field" placeholder="กท 150/2562">
+                    </div>
                 </div>
             </div>
 
             <div class="form-group-time">
-                <div class="custom-date-input">
-                    <p class="date-display">1/11/2024</p>
-                    <i class="bi bi-calendar calendar-icon"></i>
+                <div class="order-listbank">
+                    <div class="input-container">
+                        <label class="label">หมายเลขอนุญาต</label>
+                        <div class="input-wrapper">
+                            <input class="input-field" placeholder="1/11/2024">
+                            <i class="bi bi-calendar calendar-icon"></i>
+                        </div>
+                    </div>
                 </div>
-              
-                <select type="text" class="input-field-time">
-                    <option value="">ที่อยู่</option>
-                    <option value="dog">Dog</option>
-                    <option value="cat">Cat</option>
-                  </select>
+                <div class="address">
+                    <div class="input-address">
+                        <label class="label">ที่อยู่</label>
+                        <div class="input-wrapper">
+                            <select class="dropdown">
+                                <option value="category1"><i class="bi bi-bank"></i>BANKOK BANK PUBLIC COMPANY LTD.
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
             <div class="import-file-time">
                 <div class="dropzone">
                     <img src="http://100dayscss.com/codepen/upload.svg" alt="Upload Icon" class="upload-icon" />
@@ -152,11 +214,12 @@
                 </div>
             </div>
         </div>
+ 
 
         <div class="order-detail">
-           
+
             <div class="order-listbank">
-                
+
                 <div class="form-groupbank">
                     <!-- <input type="text" placeholder="ใบอนุญาติอื่น" class="input-fieldbank" /> -->
 
@@ -168,7 +231,7 @@
                         <option value="parrot">Parrot</option>
                         <option value="spider">Spider</option>
                         <option value="goldfish">Goldfish</option>
-                      </select>
+                    </select>
                 </div>
                 <div class="form-groupbank">
                     <input type="text" placeholder="ชื่อบัญชีธนาคาร" class="input-fieldbank" />
@@ -182,17 +245,17 @@
                         <option value="parrot">Parrot</option>
                         <option value="spider">Spider</option>
                         <option value="goldfish">Goldfish</option>
-                      </select>
+                    </select>
                 </div>
                 <div class="form-groupbank">
                     <input type="text" placeholder="ชื่อบัญชีธนาคาร" class="input-fieldbank" />
                 </div>
             </div>
-         
-           
-            
+
+
+
         </div>
- 
+
         <div class="btn-save">
             <p> บันทึก</p>
         </div>

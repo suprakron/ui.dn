@@ -8,6 +8,8 @@ import { AccountbankComponent } from './accountbank/accountbank.component';
 import { DatabusinessComponent } from './databusiness/databusiness.component';
 import { DataashippingComponent } from './dataashipping/dataashipping.component';
 import { CouponComponent } from './coupon/coupon.component';
+import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
+
  
 
 const routes: Routes = [
@@ -39,6 +41,10 @@ const routes: Routes = [
   {
     path: 'coupon',
     component: CouponComponent
+  },
+  {
+    path: 'forgot',
+    component: ForgotpasswordComponent
   },
 
 
