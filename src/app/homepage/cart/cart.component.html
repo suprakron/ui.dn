@@ -1,0 +1,280 @@
+<div class="cart-area">
+
+  <div class="product-container">
+    <div class="header">
+      <div class="tabs">
+        <div class="tabs-left">
+          <h2>รถเข็นของคุณ</h2>
+          <p>เลือกสินค้า 1/3</p>
+        </div>
+        <div class="search-bar">
+          <button> <i class="bi bi-trash"></i>ลบสินค้าที่เลือก</button>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="product-list">
+      <div class="product-item">
+        <input type="checkbox" id="selectitem">
+        <div class="image-placeholder"></div>
+        <div class="product-details">
+          <h3>ยาธาตุน้ำขาว กระต่ายบิน BOSS (1pcs/200ml)</h3>
+          <p>1 x ขวด</p>
+        </div>
+
+        <div class="action-plus">
+          <button class="addplus">+</button>
+          <div class="label-num">
+            <label class="numdisplay">1</label>
+          </div>
+          <button class="adddelete">-</button>
+        </div>
+        <div class="price-con">
+          <label class="price">฿749.00</label>
+        </div>
+        <div class="actions-cart">
+          <i class="bi bi-trash"></i>
+        </div>
+      </div>
+      <div class="product-item">
+        <input type="checkbox" id="selectitem">
+        <div class="image-placeholder"></div>
+        <div class="product-details">
+          <h3>ยาธาตุน้ำขาว กระต่ายบิน BOSS (Pack/12s/200ml)</h3>
+          <p>1 x แพ็ค</p>
+        </div>
+        <div class="action-plus">
+          <button class="addplus">+</button>
+          <div class="label-num">
+            <label class="numdisplay">1</label>
+          </div>
+          <button class="adddelete">-</button>
+        </div>
+        <div class="price-con">
+          <label class="price">฿749.00</label>
+        </div>
+        <div class="actions-cart">
+          <i class="bi bi-trash"></i>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <input type="checkbox" id="selectitem">
+        <div class="image-placeholder"></div>
+        <div class="product-details">
+          <h3>Nasol nebuliser spray TDC (Bottle/15ml)</h3>
+          <p>1 x ขวด</p>
+        </div>
+        <div class="action-plus">
+          <button class="addplus">+</button>
+          <div class="label-num">
+            <label class="numdisplay">1</label>
+          </div>
+          <button class="adddelete">-</button>
+        </div>
+        <div class="price-con">
+          <label class="price">฿749.00</label>
+        </div>
+        <div class="actions-cart">
+          <i class="bi bi-trash"></i>
+        </div>
+      </div>
+    </div>
+    <div class="pagination">
+      <div class="checklist">
+        <input type="checkbox" id="selectall">
+        <label for="vehicle1">เลือกสินค้าทั้งหมด</label>
+      </div>
+      <div class="condition-next">
+        <button>&lt;</button>
+        <button class="active">1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>&gt;</button>
+      </div>
+      <div class="selectorder-option">
+        <p>เลือกซื้อสินค้าเพิ่มเติม</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="cart-summary">
+    <div class="header">
+      <h3>สรุปการสั่งซื้อ (5)</h3>
+      <span>ราคา</span>
+    </div>
+    <div class="items">
+      <div class="item">
+        <span class="item-name">BM BIO Magnesium Advance +D3</span>
+        <span class="item-price">฿749.00</span>
+        <span class="item-quantity">1 x ขวด</span>
+      </div>
+      <div class="item">
+        <span class="item-name">BM Omega Triple Daily 1x60cap</span>
+        <span class="item-price">฿2,247.00</span>
+        <span class="item-quantity">1 x แพ็ค</span>
+      </div>
+      <div class="item">
+        <span class="item-name">ธาตุระต่ายบิน(ใหญ่) 200มล.</span>
+        <span class="item-price">฿636.12</span>
+        <span class="item-quantity">12 ขวด x แพ็ค</span>
+      </div>
+      <div class="item">
+        <span class="item-name">เกลือปรส Oreda (ล้ม) 3.3g ซอง</span>
+        <span class="item-price">฿166.00</span>
+        <span class="item-quantity">1 x กล่อง</span>
+      </div>
+      <div class="item">
+        <span class="item-name">Tiffy Dey 4tab</span>
+        <span class="item-price">฿198.25</span>
+        <span class="item-quantity">1 กล่อง x 25 แผง</span>
+      </div>
+    </div>
+
+    <div class="discount">
+
+      <span>ส่วนลดทั้งหมด</span>
+
+      <div class="voucher" (click)="openDialog()">
+        <i class="fas fa-gift coupon-symbol"></i>
+        <span>เลือกหรือกรอกรหัสส่วนลด</span>
+        <div>&gt;</div>
+      </div>
+
+      <dialog #cartDialog class="cart-dialog">
+        <div class="detail-dialog">
+          <div class="dialogtitl-detail">
+            <h2>เลือกโค้ดส่วนลด</h2>
+            <button type="button" class="close" aria-label="Close" (click)="closeDialog()">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="search-container">
+            <div class="search-box">
+              <i class="fas fa-search search-icon"></i>
+              <input type="search" id="site-search" name="q" placeholder="ค้นหาหมวดหมู่">
+            </div>
+            <button class="search-button">ค้นหา</button>
+          </div>
+
+          <div class="cou">
+            <div class="card-coupon">
+              <div class="cou-left">
+                <img src="https://file.drugnetcenter.com/assets/logo.png" alt="DN Center Logo" class="coupon-logo">
+                <div class="third-cutout"></div>
+                <div class="fourth-cutout"></div>
+              </div>
+              <div class="cou-right">
+                <h3 class="coupon-title">ส่วนลด 50 บาท</h3>
+                <div class="row-circle">
+                  <p class="coupon-min">ขั้นต่ำ ฿0</p>
+                  <input type="radio" class="checklist">
+
+                </div>
+                <p class="coupon-expiry">
+                  ใกล้หมดอายุ: <span class="highlight">เหลือ 8 ชั่วโมง</span>
+                  <a href="#" class="coupon-terms">เงื่อนไข</a>
+                </p>
+                <div class="right-first-cutout"></div>
+                <div class="right-second-cutout"></div>
+                <div class="right-third-cutout"></div>
+                <div class="right-fourth-cutout"></div>
+              </div>
+            </div>
+            <div class="card-coupon">
+              <div class="cou-left">
+                <img src="https://file.drugnetcenter.com/assets/logo.png" alt="DN Center Logo" class="coupon-logo">
+                <div class="third-cutout"></div>
+                <div class="fourth-cutout"></div>
+              </div>
+              <div class="cou-right">
+                <h3 class="coupon-title">ส่วนลด 50 บาท</h3>
+                <div class="row-circle">
+                  <p class="coupon-min">ขั้นต่ำ ฿0</p>
+                  <input type="radio" class="checklist">
+
+                </div>
+                <p class="coupon-expiry">
+                  ใกล้หมดอายุ: <span class="highlight">เหลือ 8 ชั่วโมง</span>
+                  <a href="#" class="coupon-terms">เงื่อนไข</a>
+                </p>
+                <div class="right-first-cutout"></div>
+                <div class="right-second-cutout"></div>
+                <div class="right-third-cutout"></div>
+                <div class="right-fourth-cutout"></div>
+              </div>
+            </div>
+            <div class="card-coupon">
+              <div class="cou-left">
+                <img src="https://file.drugnetcenter.com/assets/logo.png" alt="DN Center Logo" class="coupon-logo">
+                <div class="third-cutout"></div>
+                <div class="fourth-cutout"></div>
+              </div>
+              <div class="cou-right">
+                <h3 class="coupon-title">ส่วนลด 50 บาท</h3>
+                <div class="row-circle">
+                  <p class="coupon-min">ขั้นต่ำ ฿0</p>
+
+                  <input type="radio" class="checklist">
+                </div>
+                <p class="coupon-expiry">
+                  ใกล้หมดอายุ: <span class="highlight">เหลือ 8 ชั่วโมง</span>
+                  <a href="#" class="coupon-terms">เงื่อนไข</a>
+                </p>
+                <div class="right-first-cutout"></div>
+                <div class="right-second-cutout"></div>
+                <div class="right-third-cutout"></div>
+                <div class="right-fourth-cutout"></div>
+              </div>
+            </div>
+            <div class="card-coupon">
+              <div class="cou-left">
+                <img src="https://file.drugnetcenter.com/assets/logo.png" alt="DN Center Logo" class="coupon-logo">
+                <div class="third-cutout"></div>
+                <div class="fourth-cutout"></div>
+              </div>
+              <div class="cou-right">
+                <h3 class="coupon-title">ส่วนลด 50 บาท</h3>
+                <div class="row-circle">
+                  <p class="coupon-min">ขั้นต่ำ ฿0</p>
+                  <input type="radio" class="checklist">
+
+                </div>
+                <p class="coupon-expiry">
+                  ใกล้หมดอายุ: <span class="highlight">เหลือ 8 ชั่วโมง</span>
+                  <a href="#" class="coupon-terms">เงื่อนไข</a>
+                </p>
+                <div class="right-first-cutout"></div>
+                <div class="right-second-cutout"></div>
+                <div class="right-third-cutout"></div>
+                <div class="right-fourth-cutout"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </dialog>
+      
+      <a href="#" class="coins">
+        <span>Coins ของฉัน (1,000 coins)</span>
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider round"></span>
+        </label>
+      </a>
+    </div>
+    <div class="coin-earn">
+      <span>Coin ที่จะได้รับ</span>
+      <span>50 Coin</span>
+    </div>
+    <div class="total">
+      <span>ยอดรวมทั้งหมด</span>
+      <span>฿3,893.37</span>
+    </div>
+    <div class="confirm">
+      <button>ยืนยันการสั่งซื้อ</button>
+    </div>
+  </div>
+</div>

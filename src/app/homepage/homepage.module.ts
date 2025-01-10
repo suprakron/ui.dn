@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { BodyhomepageComponent } from './bodyhomepage/bodyhomepage.component';
 import { AlertregisterComponent } from './alertregister/alertregister.component';
 import { AlertloginComponent } from './alertlogin/alertlogin.component';
+import { CartComponent } from './cart/cart.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { AlertloginComponent } from './alertlogin/alertlogin.component';
         HeaderComponent,
         BodyhomepageComponent,
         AlertregisterComponent,
-        AlertloginComponent
+        AlertloginComponent,
+        CartComponent
       ]
   })
   export class HomeModule {}

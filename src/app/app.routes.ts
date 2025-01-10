@@ -11,6 +11,14 @@ import { CouponComponent } from './profile/coupon/coupon.component';
 import { ForgotpasswordComponent } from './profile/forgotpassword/forgotpassword.component';
 import { AlertloginComponent } from './homepage/alertlogin/alertlogin.component';
 import { AlertregisterComponent } from './homepage/alertregister/alertregister.component';
+
+ 
+import { ProductdetailComponent } from './product/productdetail/productdetail.component';
+import { ProductallComponent } from './homepage/productall/productall.component';
+import { PromotionComponent } from './homepage/promotion/promotion.component';
+import { CouponmyselfComponent } from './homepage/couponmyself/couponmyself.component';
+import { ContactComponent } from './homepage/contact/contact.component';
+import { CartComponent } from './homepage/cart/cart.component';
  
 
  
@@ -22,6 +30,26 @@ export const routes: Routes = [
       },
       { path: 'signin', component: AlertloginComponent },
       { path: 'signup', component: AlertregisterComponent },
+        {
+          path: 'productall',
+          component: ProductallComponent
+        },
+        {
+          path: 'promotion',
+          component: PromotionComponent
+        },
+        {
+          path: 'couponmyself',
+          component: CouponmyselfComponent
+        },
+        {
+          path: 'contact',
+          component: ContactComponent
+        },
+        {
+          path: 'cart',
+          component: CartComponent
+        },
       {
         path: 'profile',
         loadChildren: () => import('./profile/profile.module').then(m => m.ProfileModule)
@@ -35,6 +63,13 @@ export const routes: Routes = [
       { path: 'datashipping', component: DataashippingComponent },
       { path: 'coupon', component: CouponComponent },
       { path: 'forgot', component: ForgotpasswordComponent },
+
+      {
+        path: 'product',
+        loadChildren: () => import('./product/product.module').then(m => m.ProductModule)
+      },
+  
+      { path: 'productdetail', component: ProductdetailComponent },
  
     {
         path:'',

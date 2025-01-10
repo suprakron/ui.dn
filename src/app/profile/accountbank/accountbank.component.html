@@ -1,13 +1,11 @@
 <div class="dataarea">
 
     <div class="profile-container">
-        <!-- ส่วนโปรไฟล์ -->
         <div class="profile-section">
             <div class="profile-icon">
                 <i class="icon-user"></i>
             </div>
             <div class="profile-details">
-
                 <p class="profile-name">สิริวิชญ์</p>
                 <a href=""> <i class="bi bi-pencil-square"></i> แก้ไขข้อมูลส่วนตัว</a>
             </div>
@@ -50,8 +48,8 @@
                         <div class="icon">
                             <i class="fas fa-file-alt"></i>
                         </div>
-                        <a href=""></a>
-                        ใบสั่งซื้อ
+                        <a href="/phurchaseorder"> ใบสั่งซื้อ</a>
+                    
                     </label>
                 </li>
                 <li class="menu-item has-collapsible">
@@ -60,7 +58,8 @@
                         <div class="icon">
                             <i class="fas fa-heart"></i>
                         </div>
-                        สินค้าที่ถูกใจ
+                        <a href="/favoriteorder"> สินค้าที่ถูกใจ</a>
+                       
                     </label>
                 </li>
             </div>
@@ -69,53 +68,50 @@
 
 
     <div class="detailbank">
-
         <div class="order-page">
             <div class="header">
                 <h2>บัญชีธนาคาร & บัตร</h2>
                 <p>จัดการข้อมูลคุรเพื่อความปลอดภัยของบัญชีผู้ใช้นี้</p>
             </div>
             <hr />
-            <div class="order-list">
-                <div class="form-group">
-                    <div class="form-content">
-                        <div class="input-container">
-                            <label class="label">ชื่อบัญชีธนาคาร</label>
-                            <div class="input-wrapper">
-                                <input class="input-field" placeholder="สิริวิชญ์">
-                            </div>
-                        </div>
 
-                        <div class="input-container">
-                            <label class="label">หมายเลขบัญชีธนาคาร</label>
-                            <div class="input-wrapper">
-                                <input class="input-field" placeholder="123 456 789 0">
-                            </div>
+            <div class="form-group">
+                <div class="form-content">
+                    <div class="input-container">
+                        <label class="label">ชื่อบัญชีธนาคาร</label>
+                        <div class="input-wrapper">
+                            <input class="input-field" placeholder="สิริวิชญ์">
                         </div>
-
-                        <div class="input-container">
-                            <label class="label">เลือกธนาคาร</label>
-                            <div class="input-wrapper">
-                                <select class="dropdown">
-                                    <option value="category1"><i class="bi bi-bank"></i>BANKOK BANK PUBLIC COMPANY LTD.
-                                    </option>
-                                </select>
-                            </div>
-                        </div>
-
                     </div>
-                </div>
-                <div class="btn-group-toggle" data-toggle="buttons">
-                    <label class="btn btn-primary">
-                        <input type="checkbox" class="custom-checkbox">
-                        ตั้งเป็นที่อยู่เริ่มต้น
-                    </label>
-                </div>
-                <div class="btn-save">
-                    <p> บันทึก</p>
+
+                    <div class="input-container">
+                        <label class="label">หมายเลขบัญชีธนาคาร</label>
+                        <div class="input-wrapper">
+                            <input class="input-field" placeholder="123 456 789 0">
+                        </div>
+                    </div>
+
+                    <div class="input-container">
+                        <label class="label">เลือกธนาคาร</label>
+                        <div class="input-wrapper">
+                            <select class="dropdown">
+                                <option value="category1"><i class="bi bi-bank"></i>BANKOK BANK PUBLIC COMPANY LTD.
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-
+            <div class="btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-primary">
+                    <input type="checkbox" class="custom-checkbox">
+                    ตั้งเป็นที่อยู่เริ่มต้น
+                </label>
+            </div>
+            <div class="btn-save">
+                <p> บันทึก</p>
+            </div>
 
         </div>
 
@@ -148,7 +144,7 @@
                         <div class="input-container">
                             <label class="label">หมายเลขบัตร</label>
                             <div class="input-wrapper">
-                                <input class="input-field" placeholder="123 456 789 0">
+                                <input class="input-field" placeholder="0000 0000 0000 0000">
                             </div>
                         </div>
 
@@ -156,7 +152,7 @@
                             <div class="input-date">
                                 <label class="label">วันหมดอายุ</label>
                                 <div class="input-wrapper">
-                                    <input class="input-field" placeholder="123 456 789 0">
+                                    <input class="input-field" placeholder="ดด/ปป">
                                     <i class="bi bi-calendar-check calendar-icon"></i>
                                 </div>
                             </div>
@@ -172,7 +168,7 @@
                             </div>
                         </div>
 
-                       
+
                     </div>
                 </div>
                 <div class="btn-group-toggle" data-toggle="buttons">

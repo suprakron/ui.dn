@@ -1,90 +1,132 @@
 <div class="dataarea">
+
     <div class="profile-container">
+        <!-- ส่วนโปรไฟล์ -->
         <div class="profile-section">
             <div class="profile-icon">
-                <i class="bi bi-person-circle"></i>
+                <i class="icon-user"></i>
             </div>
             <div class="profile-details">
                 <p class="profile-name">สิริวิชญ์</p>
-                <button class="edit-button">
-                    <i class="bi bi-pencil"></i> แก้ไขข้อมูลส่วนตัว
-                </button>
+                <a href=""> <i class="bi bi-pencil-square"></i> แก้ไขข้อมูลส่วนตัว</a>
             </div>
         </div>
 
+
+        <!-- ส่วนเมนู -->
         <div class="menu-section">
-            <div class="menu-icon-text">
-                <i class="bi bi-person"></i>
-                <p>บัญชีของฉัน</p>
-            </div>
-            <div class="menu-icon-text">
-                <i class="bi bi-basket"></i>
-                <p>ใบสั่งซื้อ</p>
-            </div>
-            <div class="menu-icon-text">
-                <i class="bi bi-heart"></i>
-                <p>สินค้าที่ถูกใจ</p>
+            <div class="menu-item">
+                <li class="menu-item has-collapsible">
+                    <input type="checkbox" id="menu1">
+                    <label for="menu1" class="menu-link">
+                        <div class="icon"> <i class="fas fa-user"></i> </div>
+                        บัญชีของฉัน
+                    </label>
+                    <ul class="menu-child">
+                        <li class="menu-child-item"><a href="/datapersonnal">
+                                <p>ข้อมูลส่วนบุคคล</p>
+                            </a></li>
+                        <li class="menu-child-item"><a href="/accountbank">
+                                <p>บัญชีธนาคาร & บัตร</p>
+                            </a></li>
+                        <li class="menu-child-item"><a href="/databusiness">
+                                <p>ข้อมูลธุรกิจ</p>
+                            </a></li>
+                        <li class="menu-child-item"><a href="/datashipping">
+                                <p>ข้อมูลการจัดส่ง</p>
+                            </a></li>
+                        <li class="menu-child-item"><a href="/coupon">
+                                <p>คูปองของฉัน</p>
+                            </a></li>
+                        <li class="menu-child-item"><a href="/forgot">
+                                <p>เปลี่ยนรหัสผ่าน</p>
+                            </a></li>
+                    </ul>
+                </li>
+                <li class="menu-item has-collapsible">
+                    <input type="checkbox" id="menu2">
+                    <label for="menu2" class="menu-link">
+                        <div class="icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <a href="/phurchaseorder"> ใบสั่งซื้อ</a>
+                    </label>
+                </li>
+                <li class="menu-item has-collapsible">
+                    <input type="checkbox" id="menu3">
+                    <label for="menu3" class="menu-link">
+                        <div class="icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <a href="/favoriteorder"> สินค้าที่ถูกใจ</a>
+                    </label>
+                </li>
             </div>
         </div>
     </div>
 
     <div class="detail-coupon">
-
         <div class="detail-container">
             <section class="coupons">
                 <h2>รายการคูปอง</h2>
+                <p>รหัสส่วนลดของฉัน</p>
                 <hr />
-                <div class="cou">
-
-                    <div class="coupon-card">
-                        <div class="coupon-left">
-                            <img src="https://file.drugnetcenter.com/assets/logo.png" alt="DN Center Logo"
-                                class="coupon-logo">
+                <div class="cou">   
+                    <div class="card-coupon">
+                        <div class="cou-left">
+                            <img src="https://file.drugnetcenter.com/assets/logo.png" alt="DN Center Logo" class="coupon-logo">
+                            <div class="third-cutout"></div>
+                            <div class="fourth-cutout"></div>
                         </div>
-                        <div class="coupon-right">
+                        <div class="cou-right">
                             <h3 class="coupon-title">ส่วนลด 50 บาท</h3>
                             <div class="row-circle">
                                 <p class="coupon-min">ขั้นต่ำ ฿0</p>
-                                <div class="circle"></div>
+                                <!-- <div class="circle"></div> -->
                             </div>
                             <p class="coupon-expiry">
                                 ใกล้หมดอายุ: <span class="highlight">เหลือ 8 ชั่วโมง</span>
                                 <a href="#" class="coupon-terms">เงื่อนไข</a>
                             </p>
+                            <div class="right-first-cutout"></div>
+                            <div class="right-second-cutout"></div>
+                            <div class="right-third-cutout"></div>
+                            <div class="right-fourth-cutout"></div>
                         </div>
                     </div>
-
-
-
-                    <div class="coupon-card">
-                        <div class="coupon-left">
-                            <img src="https://file.drugnetcenter.com/assets/logo.png" alt="Logo" class="coupon-logo">
+                    <div class="card-coupon">
+                        <div class="cou-left">
+                            <img src="https://file.drugnetcenter.com/assets/logo.png" alt="DN Center Logo" class="coupon-logo">
+                            <div class="third-cutout"></div>
+                            <div class="fourth-cutout"></div>
                         </div>
-                        <div class="coupon-right">
-                            <h3 class="coupon-title">ส่วนลด 100 บาท</h3>
+                        <div class="cou-right">
+                            <h3 class="coupon-title">ส่วนลด 50 บาท</h3>
                             <div class="row-circle">
                                 <p class="coupon-min">ขั้นต่ำ ฿0</p>
-                                <div class="circle"></div>
+                                <!-- <div class="circle"></div> -->
                             </div>
-                        
                             <p class="coupon-expiry">
                                 ใกล้หมดอายุ: <span class="highlight">เหลือ 8 ชั่วโมง</span>
                                 <a href="#" class="coupon-terms">เงื่อนไข</a>
                             </p>
+                            <div class="right-first-cutout"></div>
+                            <div class="right-second-cutout"></div>
+                            <div class="right-third-cutout"></div>
+                            <div class="right-fourth-cutout"></div>
                         </div>
                     </div>
+            
                 </div>
             </section>
         </div>
 
 
-
-
         <table class="history">
             <thead>
                 <tr>
-                    <th>
-                        <h3> ประวัติการใช้งาน</h3>
+                    <th class="table-header">
+                        <h3>ประวัติการใช้งาน</h3>
                     </th>
                 </tr>
                 <tr>
@@ -93,6 +135,7 @@
                     <th>รายละเอียด</th>
                     <th>คำสั่งซื้อที่เกี่ยวข้อง</th>
                 </tr>
+                <hr />
             </thead>
             <tbody>
                 <tr>
@@ -117,11 +160,5 @@
         </table>
 
 
-
-
     </div>
-
-
-
-
 </div>

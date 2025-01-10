@@ -1,14 +1,8 @@
 @import "https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css";
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
 
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
 
 .dataarea {
-
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
@@ -19,7 +13,6 @@ body {
 .detail-from {
     display: grid;
     gap: 20px;
-
 
     .profile-from {
         background-color: #cec7c7;
@@ -494,6 +487,9 @@ body {
                 color: #252a32;
                 padding: 0.5rem 1rem;
                 transition: color 0.3s ease;
+                a{
+                    color: #000000;
+                  }
             }
 
             .menu-link:hover {
@@ -571,10 +567,6 @@ body {
         }
     }
 }
-
-
-
-
 
 @media (max-width: 1200px) {}
 

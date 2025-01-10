@@ -1,0 +1,645 @@
+.coupon-area {
+    background-color: #ffffff;
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    .coupon-myself {
+        background-color: #f5f3f3;
+        border-radius: 10px;
+        padding: 15px;
+
+        hr {
+            background-color: rgb(82, 86, 89);
+            margin: auto 10px;
+        }
+
+        .coupon-action {
+            display: flex;
+            gap: 10px;
+            margin-left: 50px;
+            padding: 10px;
+
+            .couponall,
+            .coupon-canused {
+                border: 1px solid rgb(78, 8, 68);
+                border-radius: 20px;
+                padding: 10px 20px;
+                text-align: center;
+                background-color: #f9f9f9;
+                transition: background-color 0.3s ease, transform 0.2s ease;
+
+                &:hover {
+                    background-color: #500c3e;
+                    color: white;
+                    transform: scale(1.05);
+                }
+
+                &:focus-within {
+                    background-color: #500c3e;
+                    color: white;
+                }
+
+                &:active {
+                    background-color: #871c5c;
+                    transform: scale(0.95);
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            p {
+                margin: 0;
+                font-size: 16px;
+                font-weight: bold;
+            }
+        }
+
+        .cou {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+
+            .card-coupon {
+                width: 550px;
+                height: 180px;
+                border-radius: 5px;
+                box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+                background-color: #fff;
+                padding: 0px;
+                margin: 20px;
+                position: relative;
+                display: flex;
+            }
+
+            .cou-left {
+                background-color: #3445e0;
+                width: 180px;
+                height: 100%;
+                border-radius: 5px 0 0 5px;
+                margin: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+
+            .cou-left .coupon-logo {
+                padding: 40px;
+                width: 100px;
+                object-fit: contain;
+            }
+
+            .cou-right {
+                flex-grow: 1;
+                padding: 5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .coupon-title {
+                    font-size: 18px;
+                    font-weight: bold;
+                    margin: 0;
+                    padding-top: 10px;
+                    padding-left: 10px;
+                }
+
+                .row-circle {
+                    display: flex;
+                    align-items: center;
+
+                    .coupon-min {
+                        font-size: 14px;
+                        padding-left: 10px;
+                    }
+
+                    // .circle {
+                    //     width: 50px;
+                    //     height: 20px;
+                    //     border-radius: 50px;
+                    //     background-color: #3445e0;
+                    //     margin-right: 30px;
+                    // }
+                }
+
+                .coupon-expiry {
+                    font-size: 12px;
+                    padding-bottom: 10px;
+                    padding-left: 10px;
+
+                    .highlight {
+                        font-weight: bold;
+                        color: #e74c3c;
+                    }
+
+                    .coupon-terms {
+                        color: #3445e0;
+                        text-decoration: none;
+                        font-size: 12px;
+                        padding: 10px;
+                    }
+
+                }
+
+            }
+
+            .card-coupon::before {
+                position: absolute;
+                content: "";
+                height: 40px;
+                left: -20px;
+                border-radius: 40px;
+                z-index: 1;
+                top: -25px;
+                background-color: #f5f3f3;
+                width: 40px;
+            }
+
+            .card-coupon::after {
+                position: absolute;
+                content: "";
+                height: 40px;
+                left: -25px;
+                border-radius: 40px;
+                z-index: 1;
+                top: 40px;
+                background-color: #f5f3f3;
+                width: 40px;
+            }
+
+            .card-coupon .third-cutout {
+                position: absolute;
+                height: 40px;
+                left: -25px;
+                border-radius: 40px;
+                z-index: 1;
+                top: 100px;
+                background-color: #f5f3f3;
+                width: 40px;
+            }
+
+            .card-coupon .fourth-cutout {
+                position: absolute;
+                height: 40px;
+                left: -25px;
+                border-radius: 40px;
+                z-index: 1;
+                top: 160px;
+                background-color: #f5f3f3;
+                width: 40px;
+            }
+
+            /* ส่วนเว้าด้านขวา (ตามที่คุณต้องการ) */
+            .card-coupon .right-first-cutout {
+                position: absolute;
+                height: 40px;
+                right: -20px;
+                border-radius: 40px;
+                z-index: 1;
+                top: -25px;
+                background-color: #f5f3f3;
+                width: 40px;
+            }
+
+            .card-coupon .right-second-cutout {
+                position: absolute;
+                height: 40px;
+                right: -25px;
+                border-radius: 40px;
+                z-index: 1;
+                top: 40px;
+                background-color: #f5f3f3;
+                width: 40px;
+            }
+
+            .card-coupon .right-third-cutout {
+                position: absolute;
+                height: 40px;
+                right: -25px;
+                border-radius: 40px;
+                z-index: 1;
+                top: 100px;
+                background-color: #f5f3f3;
+                width: 40px;
+            }
+
+            .card-coupon .right-fourth-cutout {
+                position: absolute;
+                height: 40px;
+                right: -25px;
+                border-radius: 40px;
+                z-index: 1;
+                top: 160px;
+                background-color: #f5f3f3;
+                width: 40px;
+            }
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+        }
+    }
+
+    .coupon-optional {
+        background-color: #f5f3f3;
+        border-radius: 10px;
+        padding: 15px;
+
+        .coupon-optionall {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 15px;
+
+            .option-row1 {
+                display: flex;
+                .card-coupon {
+                    width: 550px;
+                    height: 180px;
+                    border-radius: 5px;
+                    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+                    background-color: #fff;
+                    padding: 0px;
+                    margin: 20px;
+                    position: relative;
+                    display: flex;
+                }
+    
+                .cou-left {
+                    background-color: #3445e0;
+                    width: 180px;
+                    height: 100%;
+                    border-radius: 5px 0 0 5px;
+                    margin: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+    
+                .cou-left .coupon-logo {
+                    padding: 40px;
+                    width: 100px;
+                    object-fit: contain;
+                }
+    
+                .cou-right {
+                    flex-grow: 1;
+                    padding: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+    
+                    .coupon-title {
+                        font-size: 18px;
+                        font-weight: bold;
+                        margin: 0;
+                        padding-top: 10px;
+                        padding-left: 10px;
+                    }
+    
+                    .row-circle {
+                        display: flex;
+                        align-items: center;
+    
+                        .coupon-min {
+                            font-size: 14px;
+                            padding-left: 10px;
+                        }
+    
+                        // .circle {
+                        //     width: 50px;
+                        //     height: 20px;
+                        //     border-radius: 50px;
+                        //     background-color: #3445e0;
+                        //     margin-right: 30px;
+                        // }
+                    }
+    
+                    .coupon-expiry {
+                        font-size: 12px;
+                        padding-bottom: 10px;
+                        padding-left: 10px;
+    
+                        .highlight {
+                            font-weight: bold;
+                            color: #e74c3c;
+                        }
+    
+                        .coupon-terms {
+                            color: #3445e0;
+                            text-decoration: none;
+                            font-size: 12px;
+                            padding: 10px;
+                        }
+    
+                    }
+    
+                }
+    
+                .card-coupon::before {
+                    position: absolute;
+                    content: "";
+                    height: 40px;
+                    left: -20px;
+                    border-radius: 40px;
+                    z-index: 1;
+                    top: -25px;
+                    background-color: #f5f3f3;
+                    width: 40px;
+                }
+    
+                .card-coupon::after {
+                    position: absolute;
+                    content: "";
+                    height: 40px;
+                    left: -25px;
+                    border-radius: 40px;
+                    z-index: 1;
+                    top: 40px;
+                    background-color: #f5f3f3;
+                    width: 40px;
+                }
+    
+                .card-coupon .third-cutout {
+                    position: absolute;
+                    height: 40px;
+                    left: -25px;
+                    border-radius: 40px;
+                    z-index: 1;
+                    top: 100px;
+                    background-color: #f5f3f3;
+                    width: 40px;
+                }
+    
+                .card-coupon .fourth-cutout {
+                    position: absolute;
+                    height: 40px;
+                    left: -25px;
+                    border-radius: 40px;
+                    z-index: 1;
+                    top: 160px;
+                    background-color: #f5f3f3;
+                    width: 40px;
+                }
+    
+                /* ส่วนเว้าด้านขวา (ตามที่คุณต้องการ) */
+                .card-coupon .right-first-cutout {
+                    position: absolute;
+                    height: 40px;
+                    right: -20px;
+                    border-radius: 40px;
+                    z-index: 1;
+                    top: -25px;
+                    background-color: #f5f3f3;
+                    width: 40px;
+                }
+    
+                .card-coupon .right-second-cutout {
+                    position: absolute;
+                    height: 40px;
+                    right: -25px;
+                    border-radius: 40px;
+                    z-index: 1;
+                    top: 40px;
+                    background-color: #f5f3f3;
+                    width: 40px;
+                }
+    
+                .card-coupon .right-third-cutout {
+                    position: absolute;
+                    height: 40px;
+                    right: -25px;
+                    border-radius: 40px;
+                    z-index: 1;
+                    top: 100px;
+                    background-color: #f5f3f3;
+                    width: 40px;
+                }
+    
+                .card-coupon .right-fourth-cutout {
+                    position: absolute;
+                    height: 40px;
+                    right: -25px;
+                    border-radius: 40px;
+                    z-index: 1;
+                    top: 160px;
+                    background-color: #f5f3f3;
+                    width: 40px;
+                }
+ 
+            }
+
+            .option-row2 {
+                display: flex;
+                .card-coupon {
+                    width: 550px;
+                    height: 180px;
+                    border-radius: 5px;
+                    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+                    background-color: #fff;
+                    padding: 0px;
+                    margin: 20px;
+                    position: relative;
+                    display: flex;
+                }
+    
+                .cou-left {
+                    background-color: #3445e0;
+                    width: 180px;
+                    height: 100%;
+                    border-radius: 5px 0 0 5px;
+                    margin: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+    
+    
+                .cou-left .coupon-logo {
+                    padding: 40px;
+                    width: 100px;
+                    object-fit: contain;
+                }
+    
+                .cou-right {
+                    flex-grow: 1;
+                    padding: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+    
+                    .coupon-title {
+                        font-size: 18px;
+                        font-weight: bold;
+                        margin: 0;
+                        padding-top: 10px;
+                        padding-left: 10px;
+                    }
+    
+                    .row-circle {
+                        display: flex;
+                        align-items: center;
+    
+                        .coupon-min {
+                            font-size: 14px;
+                            padding-left: 10px;
+                        }
+    
+                        // .circle {
+                        //     width: 50px;
+                        //     height: 20px;
+                        //     border-radius: 50px;
+                        //     background-color: #3445e0;
+                        //     margin-right: 30px;
+                        // }
+                    }
+    
+                    .coupon-expiry {
+                        font-size: 12px;
+                        padding-bottom: 10px;
+                        padding-left: 10px;
+    
+                        .highlight {
+                            font-weight: bold;
+                            color: #e74c3c;
+                        }
+    
+                        .coupon-terms {
+                            color: #3445e0;
+                            text-decoration: none;
+                            font-size: 12px;
+                            padding: 10px;
+                        }
+    
+                    }
+    
+                }
+    
+                .card-coupon::before {
+                    position: absolute;
+                    content: "";
+                    height: 40px;
+                    left: -20px;
+                    border-radius: 40px;
+                    z-index: 1;
+                    top: -25px;
+                    background-color: #f5f3f3;
+                    width: 40px;
+                }
+    
+                .card-coupon::after {
+                    position: absolute;
+                    content: "";
+                    height: 40px;
+                    left: -25px;
+                    border-radius: 40px;
+                    z-index: 1;
+                    top: 40px;
+                    background-color: #f5f3f3;
+                    width: 40px;
+                }
+    
+                .card-coupon .third-cutout {
+                    position: absolute;
+                    height: 40px;
+                    left: -25px;
+                    border-radius: 40px;
+                    z-index: 1;
+                    top: 100px;
+                    background-color: #f5f3f3;
+                    width: 40px;
+                }
+    
+                .card-coupon .fourth-cutout {
+                    position: absolute;
+                    height: 40px;
+                    left: -25px;
+                    border-radius: 40px;
+                    z-index: 1;
+                    top: 160px;
+                    background-color: #f5f3f3;
+                    width: 40px;
+                }
+    
+                /* ส่วนเว้าด้านขวา (ตามที่คุณต้องการ) */
+                .card-coupon .right-first-cutout {
+                    position: absolute;
+                    height: 40px;
+                    right: -20px;
+                    border-radius: 40px;
+                    z-index: 1;
+                    top: -25px;
+                    background-color: #f5f3f3;
+                    width: 40px;
+                }
+    
+                .card-coupon .right-second-cutout {
+                    position: absolute;
+                    height: 40px;
+                    right: -25px;
+                    border-radius: 40px;
+                    z-index: 1;
+                    top: 40px;
+                    background-color: #f5f3f3;
+                    width: 40px;
+                }
+    
+                .card-coupon .right-third-cutout {
+                    position: absolute;
+                    height: 40px;
+                    right: -25px;
+                    border-radius: 40px;
+                    z-index: 1;
+                    top: 100px;
+                    background-color: #f5f3f3;
+                    width: 40px;
+                }
+    
+                .card-coupon .right-fourth-cutout {
+                    position: absolute;
+                    height: 40px;
+                    right: -25px;
+                    border-radius: 40px;
+                    z-index: 1;
+                    top: 160px;
+                    background-color: #f5f3f3;
+                    width: 40px;
+                }
+            }
+        }
+    }
+}
+
+
+ 
+@media (max-width: 480px) {
+ 
+  }
+  
+ 
+  @media (min-width: 481px) and (max-width: 768px) {
+ 
+  }
+  
+ 
+  @media (min-width: 769px) and (max-width: 1024px) {
+ 
+  }
+  
+ 
+  @media (min-width: 1025px) {
+ 
+  }
+  
+

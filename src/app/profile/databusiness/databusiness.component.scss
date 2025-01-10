@@ -5,7 +5,6 @@
 
 
 .dataarea {
-    background-color: rgb(240, 240, 240);
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
@@ -13,22 +12,25 @@
     gap: 20px;
 }
 
+
 .profile-container {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
-    max-width: 1000px;
+    gap: 1.5rem;
     border-radius: 10px;
-    margin-left: 100px;
+    margin-left: 200px;
+    max-width: 500px;
 
     .profile-section {
         display: flex;
         align-items: center;
         gap: 1rem;
-        background: #f7f9fc;
+        background-color: #cec7c7;
         padding: 1rem;
         border-radius: 8px;
         margin-left: 10px;
+        padding: 20px;
 
         .profile-icon {
             width: 50px;
@@ -66,6 +68,7 @@
         }
     }
 
+
     .menu-section {
         display: flex;
         flex-direction: column;
@@ -74,7 +77,7 @@
         .menu-item {
             display: flex;
             flex-direction: column;
-            background: #f7f9fc;
+            background-color: #cec7c7;
             padding: 20px;
             border-radius: 8px;
             margin-left: 10px;
@@ -89,6 +92,9 @@
                 text-decoration: none;
             }
 
+            // .menu.active {
+            //     transform: translateX(0);
+            // }
 
             .menu-item {
                 position: relative;
@@ -101,6 +107,9 @@
                 color: #252a32;
                 padding: 0.5rem 1rem;
                 transition: color 0.3s ease;
+                a{
+                    color: #000000;
+                  }
             }
 
             .menu-link:hover {
@@ -177,6 +186,8 @@
             }
         }
     }
+
+    
 }
 
 
@@ -185,11 +196,12 @@
     gap: 10px;
 
     .order-page {
-        width: 1300px;
-        padding: 20px;
-        background: #f7f9fc;
+        background-color: #cec7c7;
         border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-left: 20px;
+        width: 1200px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
         .header {
             display: flex;
@@ -268,14 +280,13 @@
         }
     }
 
-
-
     .order-page-business {
-        width: 1300px;
-        padding: 20px;
-        background: #f7f9fc;
+        background-color: #cec7c7;
         border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-left: 20px;
+        width: 1200px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
         .header h2 {
             font-size: 2rem;
@@ -587,11 +598,12 @@
     }
 
     .order-reportpill {
-        width: 1300px;
-        padding: 20px;
-        background: #f7f9fc;
+        background-color: #cec7c7;
         border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-left: 20px;
+        width: 1200px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
         .header h2 {
             font-size: 2rem;
@@ -826,12 +838,14 @@
         }
     }
 
-
     .order-detail {
-        background: #fff;
+        background-color: #cec7c7;
         border-radius: 10px;
-        gap: 15px;
         padding: 20px;
+        margin-left: 20px;
+        width: 1200px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
 
         .order-listbank {
             padding: 20px;
@@ -863,7 +877,21 @@
             }
         }
     }
-
+    .btn-save{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #9e1099;
+        color: #ffffff;
+        margin-top: 20px;
+        margin-left: 50px;
+        padding: 10px 15px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        width: 100px;
+        height: 30px;
+    }
 }
 
 
