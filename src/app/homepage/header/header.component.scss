@@ -1,107 +1,250 @@
  
+
+
+* {
+  box-sizing: border-box;  
+}
+
+
+.nav-area {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+
+}
+
+.banner img {
+  display: block;
+  align-items: center;
+  width: 100%;  
+  height: auto;  
+}
+
 .header {
+  display: flex;
+  height: 100px;
+  width: 100%; 
+  background-color: #633ec3;
+  margin: 0;
+  padding: 0;
+}
+
+.display-title {
+  display: flex;
+  height: 70px;
+  width: 100%;  
+  gap: 5;
+  margin-bottom: 20px; 
+  background-color: #f5f4f7;
+  .display-action{
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #fff;
-    align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 50px;
+    gap: 10px;
   }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
+  p{
+     color: #575f6b;
+
   }
-  
-  .search-bar input {
-    padding: 10px;
-    width: 300px;
-    border-radius: 20px;
-    border: 1px solid #ddd;
+}
+
+.logo img {
+  width: 190px;
+  height: 80px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 120px;
+  margin-right: 50px;
+}
+
+.detail-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.icon-menu {
+  display: flex;
+  gap: 30px;
+  flex-grow: 1;
+}
+
+.icon-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.icon-menu a:hover {
+  color: #ffcc00;
+}
+
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 20px;
+  padding: 5px 15px;
+  max-width: 300px;
+  margin-left: 20px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  flex: 1;
+  font-size: 14px;
+  color: #333;
+  border-radius: 20px;
+}
+
+.search-bar select {
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  color: #6c63ff;
+}
+
+.quota {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.quota .icon-quota img {
+  height: 24px;
+  margin-right: 8px;
+}
+
+.quota .quota-text {
+  font-size: 16px;
+}
+
+.con-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 20px;
+}
+
+.con-icons .icon-favorite,
+.con-icons .icon-cart,
+.con-icons .icon-profile {
+  position: relative;
+  cursor: pointer;
+}
+
+.con-icons .badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: #ff6347;
+  color: #fff;
+  font-size: 10px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.status-dot {
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+  width: 10px;
+  height: 10px;
+  background: #4caf50;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+/* Responsive Styles */
+
+/* Small devices (max-width: 576px) */
+@media (max-width: 576px) {
+  .header {
+    height: 80px;
+    flex-direction: column;
   }
-  
-  .user-icons span {
-    margin-left: 10px;
-    font-size: 20px;
+
+  .icon-menu {
+    gap: 10px;
+    font-size: 14px;
   }
-  
-  /* Media Query สำหรับหน้าจอขนาดใหญ่ (Desktop) */
-  @media (min-width: 1024px) {
-    .header {
-      padding: 20px 40px;
-    }
-  
-    .logo {
-      font-size: 28px;
-    }
-  
-    .search-bar input {
-      width: 350px;
-    }
-  
-    .user-icons span {
-      font-size: 22px;
-    }
+
+  .search-bar {
+    max-width: 200px;
+    margin: 10px 0;
   }
-  
-  /* Media Query สำหรับหน้าจอขนาดกลาง (Tablet/iPad) */
-  @media (max-width: 1024px) {
-    .header {
-      padding: 15px;
-    }
-  
-    .logo {
-      font-size: 22px;
-    }
-  
-    .search-bar input {
-      width: 250px;
-    }
-  
-    .user-icons span {
-      font-size: 18px;
-    }
+
+  .logo img {
+    height: 60px;
   }
-  
-  /* Media Query สำหรับมือถือขนาดเล็ก (<= 768px) */
-  @media (max-width: 768px) {
-    .header {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 10px;
-    }
-  
-    .logo {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-  
-    .search-bar input {
-      width: 200px;
-    }
-  
-    .user-icons span {
-      font-size: 16px;
-      margin-left: 5px;
-    }
+
+  .con-icons {
+    gap: 10px;
   }
-  
-  /* Media Query สำหรับมือถือที่เล็กกว่า (<= 480px) */
-  @media (max-width: 480px) {
-    .header {
-      padding: 10px;
-    }
-  
-    .logo {
-      font-size: 18px;
-    }
-  
-    .search-bar input {
-      width: 150px;
-    }
-  
-    .user-icons span {
-      font-size: 14px;
-    }
+}
+
+/* Medium devices (min-width: 577px and max-width: 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .header {
+    height: 90px;
   }
-  
+
+  .icon-menu {
+    gap: 20px;
+  }
+
+  .search-bar {
+    max-width: 250px;
+  }
+
+  .logo img {
+    height: 70px;
+  }
+
+  .con-icons {
+    gap: 15px;
+  }
+}
+
+ 
+@media (min-width: 769px) {
+  .header {
+    height: 100px;
+  }
+
+  .icon-menu {
+    gap: 30px;
+  }
+
+  .search-bar {
+    max-width: 300px;
+  }
+
+  .logo img {
+    height: 80px;
+  }
+
+  .con-icons {
+    gap: 20px;
+  }
+}
+

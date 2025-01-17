@@ -1,12 +1,12 @@
-<div class="contact-area">
+<app-header></app-header>
 
+<div class="contact-area">
     <div class="detail-title">
         <div class="contact-title">
-            <img src="https://lh3.googleusercontent.com/p/AF1QipPfMMaoU6J2C_JmPB4Qd4vpUsxTwZl_ZjVXjfsW=s680-w680-h510"
-                alt="DN Center Image">
+            <img src="../../../assets/images/img_contact.png" alt="DN Center Image">
         </div>
         <div class="contact-detail">
-            <h3>DN Center</h3>
+            <h1>DN Center</h1>
             <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec
                 ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit
                 amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
@@ -16,10 +16,7 @@
                 gravida at eget metus.</p>
         </div>
     </div>
-
     <div class="contact-form">
- 
-
         <div class="contact-formleft">
             <div class="input-container">
                 <div class="title-detail">
@@ -90,19 +87,31 @@
                 </div>
             </div>
         </div>
+
     </div>
+
     <div class="submit">
         <div class="checklist">
-
             <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-            <label for="vehicle1">ข้าพเจ้าได้อ่านและยอมรับเงื่อนไข</label><br>
-        
+            <label for="vehicle1">
+                <p>ข้าพเจ้าได้อ่านและยอมรับเงื่อนไขตามที่ระบุไว้ใน <u>นโยค้นครองข้อมูลส่วนบุคคล</u>
+                    ทุกประการและให้ความยินยอมใน</p>
+                <p>การเก็บรวบรวม ใช้ และเปิดเผยข้อมูลส่วนบุคคลของข้าพเจ้า ตามวัตถุประสงค์ที่ได้มีการแจ้งไว้ข้างต้น</p>
+            </label>
         </div>
-    
-        <div class="btn-submit">
+
+        <button class="btn-submit">
             <p>Submit</p>
-        </div>
+        </button>
+
+    </div>
+    <div class="googlemap">    
+            <iframe 
+                src="https://maps.google.com/maps?q=bangkok&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"
+                allowfullscreen
+            ></iframe>
     </div>
     
-
 </div>
+<app-footer></app-footer>

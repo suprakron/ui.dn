@@ -9,6 +9,10 @@ import { BodyhomepageComponent } from './bodyhomepage/bodyhomepage.component';
 import { AlertregisterComponent } from './alertregister/alertregister.component';
 import { AlertloginComponent } from './alertlogin/alertlogin.component';
 import { CartComponent } from './cart/cart.component';
+import { CartPaymentComponent } from './cart-payment/cart-payment.component';
+import { ReviewcustomerComponent } from './reviewcustomer/reviewcustomer.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+ 
 
 
 @NgModule({
@@ -20,7 +24,8 @@ import { CartComponent } from './cart/cart.component';
         BodyhomepageComponent,
         AlertregisterComponent,
         AlertloginComponent,
-        CartComponent
+        ReviewcustomerComponent,
+        AboutusComponent,
       ]
   })
   export class HomeModule {}

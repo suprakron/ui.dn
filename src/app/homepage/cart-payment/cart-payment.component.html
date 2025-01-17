@@ -1,0 +1,354 @@
+<app-header></app-header>
+<div class="cart-area">
+    <div class="detail-container">
+        <div class="product-container">
+            <div class="header">
+                <div class="tabs">
+                    <div class="tabs-left">
+                        <h2>ข้อมูลการจัดส่ง</h2>
+                        <p>จัดการข้อมูลส่วนตัวคุณเพื่อความปลอดภัย</p>
+                    </div>
+                    <div class="search-bar">
+                        <button> เปลี่ยนที่อยู่</button>
+                    </div>
+                </div>
+            </div>
+            <hr />
+
+            <div class="form-content">
+                <div class="input-container">
+                    <label class="label" for="houseNumber">ชื่อ-นามสกุล</label>
+                    <input type="text" id="houseNumber" class="input-field" placeholder="สิรวิชญ์">
+                </div>
+
+                <div class="detail-name">
+                    <div class="input-container">
+                        <label class="label" for="fullname">หมายเลขโทรศัพท์มือถือ</label>
+                        <input type="text" id="fullname" class="input-field" placeholder="กรอกชื่อ - นามสกุล">
+                    </div>
+                    <div class="input-container">
+                        <label class="label" for="lastname">อีเมลล์</label>
+                        <input type="text" id="lastname" class="input-field" placeholder="testui@gmail.com">
+                    </div>
+                </div>
+                <div class="address-container">
+                    <label class="label" for="houseNumber">ที่อยู่ร้านขายยา</label>
+                    <select class="address-choice" placeholder="บ้านเลขที่, ซอย, หมู่, ถนน, แขวง/ตำบล">
+                        <option value="">เลือกที่อยู่</option>
+                        <option value="1">บ้าน</option>
+                        <option value="2">ที่ทำงาน</option>
+                    </select>
+                </div>
+                <div class="input-container">
+                    <label class="label" for="houseNumber">บ้านเลขที่</label>
+                    <input type="text" id="houseNumber" class="input-field"
+                        placeholder="บ้านเลขที่, ซอย, หมู่, ถนน, แขวง/ตำบล">
+                </div>
+                <div class="save-button">
+                    <p> บันทึกข้อมูลของฉัน</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="taxinvoice">
+            <div class="header">
+                <div class="tabs">
+                    <div class="tabs-left">
+                        <h2>ขอใบกำกับภาษี</h2>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="checklist-tax">
+                <input type="checkbox" class="serialnum">
+                <label for="vehicle1">1234567891011</label><br>
+                <input type="checkbox" class="optional">
+                <label for="vehicle2">อื่น ๆ</label>
+            </div>
+            <div class="form-content">
+                <div class="input-container">
+                    <label class="label" for="houseNumber">ชื่อบริษัท / ร้านขายยา / ร้านยา</label>
+                    <input type="text" id="houseNumber" class="input-field" placeholder="อย่างน้อย 2 ตัวอักษร">
+                </div>
+                <div class="input-container">
+                    <label class="label" for="houseNumber">เลขประจำตัวผู้เสียภาษีอากร</label>
+                    <input type="text" id="houseNumber" class="input-field" placeholder="เลขประจำตัวผู้เสียภาษีอากร">
+                </div>
+                <div class="inputaddresscom">
+                    <label class="label">ที่อยู่ </label>
+                    <input type="text" class="input-fieldadd" placeholder="กรอกที่อยู่บริษัท">
+                </div>
+            </div>
+        </div>
+        <div class="selectaddress">
+            <div class="header">
+                <div class="tabs">
+                    <div class="tabs-left">
+                        <h2>วิธีการจัดส่ง</h2>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="checklist-address">
+                <label class="address-option">
+                    <input type="checkbox" name="shipping" class="address-formal">
+                    <span>จัดส่งแบบมาตรฐาน</span>
+                </label>
+                <label class="address-option">
+                    <input type="checkbox" name="shipping" class="address-special">
+                    <span>จัดส่งด่วน (มีค่าส่งเพิ่มเติม)</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="selectpayment">
+            <div class="header">
+                <div class="tabs">
+                    <div class="tabs-left">
+                        <h2>วิธีการชำระเงิน</h2>
+                    </div>
+                </div>
+            </div>
+            <hr />
+
+            <div class="detail-payment">
+                <label for="address">เลือกวิธีการชำระเงิน</label>
+                <select id="address" class="address" placeholder="บ้านเลขที่, ซอย, หมู่, ถนน, แขวง/ตำบล">
+                    <option value="">เก็บเงินปลายทาง (ชำระทันทีกับพนักงานขนส่งปลายทาง)</option>
+                </select>
+            </div>
+        </div>
+        <div class="selectremark">
+            <div class="header">
+                <div class="tabs">
+                    <div class="tabs-left">
+                        <h2>หมายเหตุ</h2>
+                        <p>จัดการข้อมูลส่วนตัวของคุณเพื่อความปลอดภัยของบัญชีผู้ใช้นี้</p>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="inputremark">
+                <label class="label">ที่อยู่ </label>
+                <input type="text" class="input-remark">
+            </div>
+        </div>
+    </div>
+    <div class="con-sum">
+        <div class="cart-summary">
+            <div class="header">
+                <h3>สรุปการสั่งซื้อ (5)</h3>
+                <span>ราคา</span>
+            </div>
+            <div class="items">
+                <div class="item">
+                    <div class="item-title">
+                        <span class="item-name">BM BIO Magnesium Advance +D3</span>
+                        <span class="item-quantity">1 x ขวด</span>
+                    </div>
+                    <span class="item-price">฿749.00</span>
+
+                </div>
+                <div class="item">
+                    <div class="item-title">
+                        <span class="item-name">BM BIO Magnesium Advance +D3</span>
+                        <span class="item-quantity">1 x ขวด</span>
+                    </div>
+                    <span class="item-price">฿749.00</span>
+                </div>
+                <div class="item">
+                    <div class="item-title">
+                        <span class="item-name">BM BIO Magnesium Advance +D3</span>
+                        <span class="item-quantity">1 x ขวด</span>
+                    </div>
+                    <span class="item-price">฿749.00</span>
+                </div>
+                <div class="item">
+                    <div class="item-title">
+                        <span class="item-name">BM BIO Magnesium Advance +D3</span>
+                        <span class="item-quantity">1 x ขวด</span>
+                    </div>
+                    <span class="item-price">฿749.00</span>
+                </div>
+                <div class="item">
+                    <div class="item-title">
+                        <span class="item-name">BM BIO Magnesium Advance +D3</span>
+                        <span class="item-quantity">1 x ขวด</span>
+                    </div>
+                    <span class="item-price">฿749.00</span>
+                </div>
+            </div>
+            <hr />
+
+            <div class="discount">
+                <span>ส่วนลดทั้งหมด</span>
+                <div class="voucher" (click)="openDialog()">
+                    <div class="icon-coupn">
+                        <img src="../../../assets/images/icon/coupon.png" alt="">
+                    </div>
+                    <span>เลือกหรือกรอกรหัสส่วนลด</span>
+                    <!-- <div>&gt;</div> -->
+                    <div class="price">-฿50</div>
+                </div>
+
+                <dialog #cartDialog class="cart-dialog">
+                    <div class="detail-dialog">
+                        <div class="dialogtitl-detail">
+                            <h2>เลือกโค้ดส่วนลด</h2>
+                            <!-- <button type="button" class="close" aria-label="Close" (click)="closeDialog()">
+                    <span aria-hidden="true">&times;</span>
+                  </button> -->
+                        </div>
+
+                        <div class="search-container">
+                            <div class="search-box">
+                                <i class="fas fa-search search-icon"></i>
+                                <input type="search" id="site-search" name="q" placeholder="ค้นหาหมวดหมู่">
+                            </div>
+                            <button class="search-button">ค้นหา</button>
+                        </div>
+
+                        <div class="cou">
+                            <div class="card-coupon">
+                                <div class="cou-left">
+                                    <img src="https://file.drugnetcenter.com/assets/logo.png" alt="DN Center Logo"
+                                        class="coupon-logo">
+                                    <div class="third-cutout"></div>
+                                    <div class="fourth-cutout"></div>
+                                </div>
+                                <div class="cou-right">
+                                    <h3 class="coupon-title">ส่วนลด 50 บาท</h3>
+                                    <div class="row-circle">
+                                        <p class="coupon-min">ขั้นต่ำ ฿0</p>
+                                        <input type="radio" class="checklist">
+
+                                    </div>
+                                    <p class="coupon-expiry">
+                                        ใกล้หมดอายุ: <span class="highlight">เหลือ 8 ชั่วโมง</span>
+                                        <a href="#" class="coupon-terms">เงื่อนไข</a>
+                                    </p>
+                                    <div class="right-first-cutout"></div>
+                                    <div class="right-second-cutout"></div>
+                                    <div class="right-third-cutout"></div>
+                                    <div class="right-fourth-cutout"></div>
+                                </div>
+                            </div>
+                            <div class="card-coupon">
+                                <div class="cou-left">
+                                    <img src="https://file.drugnetcenter.com/assets/logo.png" alt="DN Center Logo"
+                                        class="coupon-logo">
+                                    <div class="third-cutout"></div>
+                                    <div class="fourth-cutout"></div>
+                                </div>
+                                <div class="cou-right">
+                                    <h3 class="coupon-title">ส่วนลด 50 บาท</h3>
+                                    <div class="row-circle">
+                                        <p class="coupon-min">ขั้นต่ำ ฿0</p>
+                                        <input type="radio" class="checklist">
+
+                                    </div>
+                                    <p class="coupon-expiry">
+                                        ใกล้หมดอายุ: <span class="highlight">เหลือ 8 ชั่วโมง</span>
+                                        <a href="#" class="coupon-terms">เงื่อนไข</a>
+                                    </p>
+                                    <div class="right-first-cutout"></div>
+                                    <div class="right-second-cutout"></div>
+                                    <div class="right-third-cutout"></div>
+                                    <div class="right-fourth-cutout"></div>
+                                </div>
+                            </div>
+                            <div class="card-coupon">
+                                <div class="cou-left">
+                                    <img src="https://file.drugnetcenter.com/assets/logo.png" alt="DN Center Logo"
+                                        class="coupon-logo">
+                                    <div class="third-cutout"></div>
+                                    <div class="fourth-cutout"></div>
+                                </div>
+                                <div class="cou-right">
+                                    <h3 class="coupon-title">ส่วนลด 50 บาท</h3>
+                                    <div class="row-circle">
+                                        <p class="coupon-min">ขั้นต่ำ ฿0</p>
+
+                                        <input type="radio" class="checklist">
+                                    </div>
+                                    <p class="coupon-expiry">
+                                        ใกล้หมดอายุ: <span class="highlight">เหลือ 8 ชั่วโมง</span>
+                                        <a href="#" class="coupon-terms">เงื่อนไข</a>
+                                    </p>
+                                    <div class="right-first-cutout"></div>
+                                    <div class="right-second-cutout"></div>
+                                    <div class="right-third-cutout"></div>
+                                    <div class="right-fourth-cutout"></div>
+                                </div>
+                            </div>
+                            <div class="card-coupon">
+                                <div class="cou-left">
+                                    <img src="https://file.drugnetcenter.com/assets/logo.png" alt="DN Center Logo"
+                                        class="coupon-logo">
+                                    <div class="third-cutout"></div>
+                                    <div class="fourth-cutout"></div>
+                                </div>
+                                <div class="cou-right">
+                                    <h3 class="coupon-title">ส่วนลด 50 บาท</h3>
+                                    <div class="row-circle">
+                                        <p class="coupon-min">ขั้นต่ำ ฿0</p>
+                                        <input type="radio" class="checklist">
+
+                                    </div>
+                                    <p class="coupon-expiry">
+                                        ใกล้หมดอายุ: <span class="highlight">เหลือ 8 ชั่วโมง</span>
+                                        <a href="#" class="coupon-terms">เงื่อนไข</a>
+                                    </p>
+                                    <div class="right-first-cutout"></div>
+                                    <div class="right-second-cutout"></div>
+                                    <div class="right-third-cutout"></div>
+                                    <div class="right-fourth-cutout"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </dialog>
+
+                <a href="#" class="coins">
+                    <div class="coin-icon">
+                        <img src="../../../assets/images/icon/coin.png" alt="">
+                    </div>
+                    <span>Coins ของฉัน (1,000 coins)</span>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </a>
+            </div>
+            <hr />
+            <div class="text-confrim">
+                <p>โปรดตรวจสอบข้อมูลการจัดส่งและวิธีการชำระเงินของคุณอีกครั้ง</p>
+                <p>จากนั้นคลิกปุ่ม 'ชำระเงิน' ด้านล่างเพื่อดำเนินการสั่งซื้อให้เสร็จสิ้น</p>
+            </div>
+            <div class="summary-under">
+                <div class="coin-earn">
+                    <span>Coin ที่จะได้รับ</span>
+                    <span>50 Coin</span>
+                </div>
+                <div class="total">
+                    <span>ยอดรวมทั้งหมด</span>
+                    <span>฿3,893.37</span>
+                </div>
+                <div class="checklist-pdpa">
+                    <input type="checkbox" class="address-formal">
+                    <span class="pdpa">ยอมรับเงื่อนไขตามที่ระบุไว้ใน<u> นโยบายคุ้มครองข้อมูลส่วนบุคคล</u></span>
+                </div>
+                <div class="confirm">
+                    <button>ยืนยันการสั่งซื้อ</button>
+                </div>
+            </div>
+         
+        </div>
+        <div class="btn-selectoptional">
+            <button>เลือกสินค้าเพิ่มเติม</button>
+          </div>
+        
+    </div>
+</div>
+<app-footer></app-footer>

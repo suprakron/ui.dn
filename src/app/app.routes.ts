@@ -19,6 +19,9 @@ import { PromotionComponent } from './homepage/promotion/promotion.component';
 import { CouponmyselfComponent } from './homepage/couponmyself/couponmyself.component';
 import { ContactComponent } from './homepage/contact/contact.component';
 import { CartComponent } from './homepage/cart/cart.component';
+import { CartPaymentComponent } from './homepage/cart-payment/cart-payment.component';
+import { ReviewcustomerComponent } from './homepage/reviewcustomer/reviewcustomer.component';
+import { AboutusComponent } from './homepage/aboutus/aboutus.component';
  
 
  
@@ -50,6 +53,20 @@ export const routes: Routes = [
           path: 'cart',
           component: CartComponent
         },
+        {
+          path: 'cart_payment',
+          component: CartPaymentComponent
+        },
+        {
+          path: 'review',
+          component: ReviewcustomerComponent
+        },
+        {
+          path: 'about',
+          component: AboutusComponent
+        },
+  
+  
       {
         path: 'profile',
         loadChildren: () => import('./profile/profile.module').then(m => m.ProfileModule)

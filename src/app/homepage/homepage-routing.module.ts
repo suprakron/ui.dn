@@ -11,6 +11,10 @@ import { PromotionComponent } from './promotion/promotion.component';
 import { CouponmyselfComponent } from './couponmyself/couponmyself.component';
 import { ContactComponent } from './contact/contact.component';
 import { CartComponent } from './cart/cart.component';
+import { CartPaymentComponent } from './cart-payment/cart-payment.component';
+import { ReviewcustomerComponent } from './reviewcustomer/reviewcustomer.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+ 
 
 
 const routes: Routes = [
@@ -54,7 +58,18 @@ const routes: Routes = [
     path: 'cart',
     component: CartComponent
   },
-
+  {
+    path: 'cart_payment',
+    component: CartPaymentComponent
+  },
+  {
+    path: 'review',
+    component: ReviewcustomerComponent
+  },
+  {
+    path: 'about',
+    component: AboutusComponent
+  },
 
 
 ];

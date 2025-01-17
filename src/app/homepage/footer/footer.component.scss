@@ -1,0 +1,91 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css";
+
+footer {
+    background-color: #2e3847;
+    color: #fff;
+    padding: 40px 20px;
+    width: 100%;
+ 
+    position: relative;
+    bottom: 0;
+    left: 0;
+    z-index: 888;
+    box-sizing: border-box; 
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-sizing: border-box; /* เพิ่ม box-sizing สำหรับการจัดการขนาด */
+}
+
+.footer-section h3 {
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.footer-section p {
+    margin: 5px 0;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #1da1f2;
+}
+
+.footer-detail {
+    border-top: 2px solid #fff;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 0.9em;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    width: calc(100% - 22px);
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #777;
+}

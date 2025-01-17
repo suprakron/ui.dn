@@ -1,5 +1,6 @@
-<div class="cart-area">
+<app-header></app-header>
 
+<div class="cart-area">
   <div class="product-container">
     <div class="header">
       <div class="tabs">
@@ -21,19 +22,20 @@
           <h3>ยาธาตุน้ำขาว กระต่ายบิน BOSS (1pcs/200ml)</h3>
           <p>1 x ขวด</p>
         </div>
-
-        <div class="action-plus">
-          <button class="addplus">+</button>
-          <div class="label-num">
-            <label class="numdisplay">1</label>
+        <div class="container-actions">
+          <div class="action-plus">
+            <button class="addplus">+</button>
+            <div class="label-num">
+              <label class="numdisplay">1</label>
+            </div>
+            <button class="adddelete">-</button>
           </div>
-          <button class="adddelete">-</button>
-        </div>
-        <div class="price-con">
-          <label class="price">฿749.00</label>
-        </div>
-        <div class="actions-cart">
-          <i class="bi bi-trash"></i>
+          <div class="price-con">
+            <label class="price">฿749.00</label>
+          </div>
+          <div class="actions-cart">
+            <i class="bi bi-trash"></i>
+          </div>
         </div>
       </div>
       <div class="product-item">
@@ -43,18 +45,21 @@
           <h3>ยาธาตุน้ำขาว กระต่ายบิน BOSS (Pack/12s/200ml)</h3>
           <p>1 x แพ็ค</p>
         </div>
-        <div class="action-plus">
-          <button class="addplus">+</button>
-          <div class="label-num">
-            <label class="numdisplay">1</label>
+
+        <div class="container-actions">
+          <div class="action-plus">
+            <button class="addplus">+</button>
+            <div class="label-num">
+              <label class="numdisplay">1</label>
+            </div>
+            <button class="adddelete">-</button>
           </div>
-          <button class="adddelete">-</button>
-        </div>
-        <div class="price-con">
-          <label class="price">฿749.00</label>
-        </div>
-        <div class="actions-cart">
-          <i class="bi bi-trash"></i>
+          <div class="price-con">
+            <label class="price">฿749.00</label>
+          </div>
+          <div class="actions-cart">
+            <i class="bi bi-trash"></i>
+          </div>
         </div>
       </div>
 
@@ -65,18 +70,20 @@
           <h3>Nasol nebuliser spray TDC (Bottle/15ml)</h3>
           <p>1 x ขวด</p>
         </div>
-        <div class="action-plus">
-          <button class="addplus">+</button>
-          <div class="label-num">
-            <label class="numdisplay">1</label>
+        <div class="container-actions">
+          <div class="action-plus">
+            <button class="addplus">+</button>
+            <div class="label-num">
+              <label class="numdisplay">1</label>
+            </div>
+            <button class="adddelete">-</button>
           </div>
-          <button class="adddelete">-</button>
-        </div>
-        <div class="price-con">
-          <label class="price">฿749.00</label>
-        </div>
-        <div class="actions-cart">
-          <i class="bi bi-trash"></i>
+          <div class="price-con">
+            <label class="price">฿749.00</label>
+          </div>
+          <div class="actions-cart">
+            <i class="bi bi-trash"></i>
+          </div>
         </div>
       </div>
     </div>
@@ -98,46 +105,59 @@
     </div>
   </div>
 
-
+  
   <div class="cart-summary">
     <div class="header">
       <h3>สรุปการสั่งซื้อ (5)</h3>
       <span>ราคา</span>
     </div>
     <div class="items">
+
       <div class="item">
-        <span class="item-name">BM BIO Magnesium Advance +D3</span>
+        <div class="item-title">
+          <span class="item-name">BM BIO Magnesium Advance +D3</span>
+          <span class="item-quantity">1 x ขวด</span>
+        </div>
         <span class="item-price">฿749.00</span>
-        <span class="item-quantity">1 x ขวด</span>
       </div>
       <div class="item">
-        <span class="item-name">BM Omega Triple Daily 1x60cap</span>
-        <span class="item-price">฿2,247.00</span>
-        <span class="item-quantity">1 x แพ็ค</span>
+        <div class="item-title">
+          <span class="item-name">BM BIO Magnesium Advance +D3</span>
+          <span class="item-quantity">1 x ขวด</span>
+        </div>
+        <span class="item-price">฿749.00</span>
       </div>
       <div class="item">
-        <span class="item-name">ธาตุระต่ายบิน(ใหญ่) 200มล.</span>
-        <span class="item-price">฿636.12</span>
-        <span class="item-quantity">12 ขวด x แพ็ค</span>
+        <div class="item-title">
+          <span class="item-name">BM BIO Magnesium Advance +D3</span>
+          <span class="item-quantity">1 x ขวด</span>
+        </div>
+        <span class="item-price">฿749.00</span>
       </div>
       <div class="item">
-        <span class="item-name">เกลือปรส Oreda (ล้ม) 3.3g ซอง</span>
-        <span class="item-price">฿166.00</span>
-        <span class="item-quantity">1 x กล่อง</span>
+        <div class="item-title">
+          <span class="item-name">BM BIO Magnesium Advance +D3</span>
+          <span class="item-quantity">1 x ขวด</span>
+        </div>
+        <span class="item-price">฿749.00</span>
       </div>
       <div class="item">
-        <span class="item-name">Tiffy Dey 4tab</span>
-        <span class="item-price">฿198.25</span>
-        <span class="item-quantity">1 กล่อง x 25 แผง</span>
+        <div class="item-title">
+          <span class="item-name">BM BIO Magnesium Advance +D3</span>
+          <span class="item-quantity">1 x ขวด</span>
+        </div>
+        <span class="item-price">฿749.00</span>
       </div>
+
     </div>
+    <hr />
 
     <div class="discount">
-
       <span>ส่วนลดทั้งหมด</span>
-
       <div class="voucher" (click)="openDialog()">
-        <i class="fas fa-gift coupon-symbol"></i>
+        <div class="icon-coupn">
+          <img src="../../../assets/images/icon/coupon.png" alt="">
+        </div>
         <span>เลือกหรือกรอกรหัสส่วนลด</span>
         <div>&gt;</div>
       </div>
@@ -256,15 +276,20 @@
 
         </div>
       </dialog>
-      
+
       <a href="#" class="coins">
+        <div class="coin-icon">
+          <img src="../../../assets/images/icon/coin.png" alt="">
+        </div>
         <span>Coins ของฉัน (1,000 coins)</span>
         <label class="switch">
           <input type="checkbox" checked>
           <span class="slider round"></span>
         </label>
       </a>
+
     </div>
+    <hr />
     <div class="coin-earn">
       <span>Coin ที่จะได้รับ</span>
       <span>50 Coin</span>
@@ -277,4 +302,6 @@
       <button>ยืนยันการสั่งซื้อ</button>
     </div>
   </div>
+
 </div>
+<app-footer></app-footer>

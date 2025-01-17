@@ -1,10 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { FooterComponent } from "../footer/footer.component";
+import { HeaderComponent } from "../header/header.component";
+import { BannerComponent } from "../banner/banner.component";
 
 @Component({
   selector: 'app-cart',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, FooterComponent, HeaderComponent  ],
   templateUrl: './cart.component.html',
   styleUrl: './cart.component.scss'
 })
