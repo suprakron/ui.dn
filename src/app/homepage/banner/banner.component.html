@@ -14,12 +14,11 @@
 </div>
 
 
-
 <div class="red-box">
   <div class="login">
     <p>คลิก</p>
     <p>เข้าสู่ระบบ</p>
-    <a name="" id="" class="btn btn-primary" href="#" role="button">
+    <a (click)="openlnDialog()" class="btn btn-primary">
       <p>คลิกเลย!</p>
     </a>
     <hr />
@@ -27,11 +26,238 @@
   <div class="register">
     <p>คลิก</p>
     <p>ลงทะเบียน</p>
-    <a name="" id="" class="btn btn-primary" href="#" role="button">
+    <a (click)="openrgDialog()" class="btn btn-primary">
       <p>คลิกเลย!</p>
     </a>
   </div>
 </div>
+<!-- dialog Login-->
+<dialog #RegisterDialog class="register-dialog">
+  <div class="register-title">
+    <img src="../../../assets/images/dn_logo.png" alt="">
+    <h3>ข้อมูลทั่วไป General</h3>
+  </div>
+  <div class="detail-register">
+    <div class="data-general">
+      <div class="data-name">
+        <div class="name-person">
+          <input type="text" placeholder="ชื่อร้านของคุณ">
+          <select name="" id=""></select>
+        </div>
+      </div>
+      <div class="data-general-extract">
+        <div class="type-store">
+          <div class="name-store">
+            <input type="text" placeholder="ประเภทร้าน">
+            <select name="" id=""></select>
+          </div>
+        </div>
+
+        <div class="time-store">
+          <div class="timeline">
+            <input type="text" placeholder="ช่วงเวลาทำการ">
+            <select name="" id=""></select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="data-contact">
+      <h3>ข้อมูลติดต่อ Contact</h3>
+      <div class="detail-contact1">
+        <div class="contact-name">
+          <div class="contact-person">
+            <i class="bi bi-person"></i>
+            <input type="text" placeholder="ชื่อ-นามสกุล">
+            <select name="" id=""></select>
+          </div>
+        </div>
+        <div class="contact-Tel">
+
+          <div class="Tel-person">
+            <i class="bi bi-telephone"></i>
+            <input type="text" placeholder="เบอร์โทรศัพท์">
+            <select name="" id=""></select>
+          </div>
+        </div>
+      </div>
+      <div class="detail-cotact2">
+        <div class="email-name">
+          <div class="email-person">
+            <i class="bi bi-envelope"></i>
+            <input type="text" placeholder="อีเมล">
+            <select name="" id=""></select>
+          </div>
+        </div>
+        <div class="contact-line">
+          <div class="line-person">
+            <i class="bi bi-line"></i>
+            <input type="text" placeholder="ไอดีไลน์">
+            <select name="" id=""></select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="data-address">
+      <h3>ข้อมูลที่อยู่ Address</h3>
+      <div class="checklist-address">
+        <input type="checkbox">
+        <label>ใช้ชื่อเดียวกับผู้ติดต่อ</label>
+      </div>
+
+      <div class="contact-address">
+        <div class="address-name">
+          <div class="address-person">
+            <i class="bi bi-person"></i>
+            <input type="text" placeholder="ชื่อ-นามสกุล">
+            <select name="" id=""></select>
+          </div>
+        </div>
+        <div class="contact-tele">
+          <div class="tele-person">
+            <i class="bi bi-telephone"></i>
+            <input type="text" placeholder="เบอร์โทรศัพท์">
+            <select name="" id=""></select>
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-contact-address">
+        <div class="details-contact-address">
+          <i class="bi bi-geo-alt-fill"></i>
+          <input type="text" placeholder="จังหวัด, เขต/อำเภอ ,แขวง/ตำบล ">
+          <select name="" id=""></select>
+        </div>
+      </div>
+      <div class="zipcode-address">
+        <div class="detail-zipcode">
+          <i class="bi bi-geo-alt-fill"></i>
+          <input type="text" placeholder="รหัสไปรษณีย์">
+          <select name="" id=""></select>
+        </div>
+      </div>
+      <div class="detaildata-contact">
+        <div class="detaildata-contacts">
+          <i class="bi bi-pencil-square"></i>
+          <input type="text" placeholder="บ้านเลขที่ / ซอย / หมู่ / ถนน / แขวง / ตำบล">
+          <select name="" id=""></select>
+        </div>
+      </div>
+    </div>
+    <div class="data-document">
+      <h3>เอกสาร Document</h3>
+      <div class="checklist-document">
+        <label>ใบอนุญาตขายยา/สถานพยาบาล</label>
+        <input type="checkbox">
+        <label>ใบเสร็จการขออนุญาต</label>
+      </div>
+      <div class="name-document">
+        <div class="register-store">
+          <div class="store-person">
+            <i class="bi bi-file-earmark-text"></i>
+            <input type="text" placeholder="ทะเบียนการค้า">
+            <select name="" id=""></select>
+          </div>
+        </div>
+        <div class="Drugsale">
+          <div class="sale-person">
+            <i class="bi bi-building-check"></i>
+            <input type="text" placeholder="ใบอนุญาตขายยา หรือ ใบเสร็จขายยา">
+            <select name="" id=""></select>
+          </div>
+        </div>
+      </div>
+
+      <div class="national">
+        <div class="national-person">
+          <i class="bi bi-person-square"></i>
+          <input type="text" placeholder="บัตรประชาชน">
+          <select name="" id=""></select>
+        </div>
+      </div>
+
+      <div class="import-file-time">
+        <div class="dropzone">
+          <div class="icon-wrapper">
+            <div class="icon-outline"></div>
+            <div class="image-symbol">
+              <div class="triangle"></div>
+              <div class="circle"></div>
+            </div>
+            <div class="plus-symbol">
+              <div class="vertical"></div>
+              <div class="horizontal"></div>
+            </div>
+          </div>
+          <!-- <img src="http://100dayscss.com/codepen/upload.svg" alt="Upload Icon" class="upload-icon" /> -->
+          <input type="file" class="uploadfile" />
+          <p>ลากและวางไฟล์ที่นี่ </p>
+          <p>ไฟล์ PDF, PNG, JPEG, JPG, DOC หรือ DOCX - สูงสุด 3 ไฟล์</p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="btn-action">
+      <a href="#" class="action-register">ลงทะเบียน</a>
+    </div>
+
+
+  </div>
+
+</dialog>
+<!-- dialog Register-->
+<dialog #LoginDialog class="login-dialog">
+  <div class="login-title">
+    <img src="../../../assets/images/dn_logo.png" alt="">
+    <h3>เข้าสู่ระบบ</h3>
+  </div>
+  <div class="detail-login">
+    <div class="account-myself">
+      <div class="username">
+        <img src="../../../assets/images/icon/icon_login_u.png" alt="">
+        <input type="text" placeholder="บัญชีของคุณ">
+        <select name="" id=""></select>
+      </div>
+    </div>
+    <div class="detail-password">
+      <div class="password">
+        <img src="../../../assets/images/icon/icon_login_p.png" alt="">
+        <input type="password" id="password-input" class="password-field" placeholder="รหัสผ่าน">
+        <input type="checkbox" id="toggle-password" class="toggle-checkbox">
+        <label for="toggle-password" class="toggle-icon">
+          <i class="bi bi-eye"></i>
+          <i class="bi bi-eye-slash"></i>
+        </label>
+      </div>
+    </div>
+
+    <div class="checlist-remember">
+      <div class="checklist">
+        <input type="checkbox" name="" id="">
+        <p>จดจำรหัสผ่าน</p>
+      </div>
+      <div class="forgot-password">
+        <a href="#" class="forgot">ลืมรหัสผ่าน?</a>
+      </div>
+
+
+    </div>
+    <div class="btn-action">
+      <a href="#" class="btn-login">
+        <p>เข้าสู่ระบบ</p>
+
+      </a>
+      <a href="#" class="btn-register">
+        <p>ลงทะเบียน</p>
+      </a>
+    </div>
+  </div>
+</dialog>
+
+
+
 
 <div class="bannercategory">
   <div class="banner-item">
@@ -59,37 +285,38 @@
       <img src="../../../assets/images/category/cat_pill.png" alt="">
 
     </a>
-    <a  href="#" class="category-item">
+    <a href="#" class="category-item">
       <img src="../../../assets/images/category/cat_medical.png" alt="">
 
     </a>
-    <a  href="#" class="category-item">
+    <a href="#" class="category-item">
       <img src="../../../assets/images/category/cat_material.png" alt="">
 
     </a>
-    <a  href="#" class="category-item">
+    <a href="#" class="category-item">
       <img src="../../../assets/images/category/cat_food.png" alt="">
     </a>
-    <a   href="#" class="category-item">
+    <a href="#" class="category-item">
       <img src="../../../assets/images/category/cat_cosmetics.png" alt="">
 
     </a>
   </div>
   <div class="category-row2">
-      <a  href="#" class="category-item">
-        <img src="../../../assets/images/category/cat_restore.png" alt="">
-      </a>
-      <a  href="#" class="category-item">
-        <img src="../../../assets/images/category/cat_lookafter.png" alt="">
-      </a>
-      <a  href="#" class="category-item">
-        <img src="../../../assets/images/category/cat_dentistry.png" alt="">
-      </a>
-      <a  href="#" class="category-item">
-        <img src="../../../assets/images/category/cat_cosmeceuticals.png" alt="">
-      </a>
-      <a  href="#" class="category-item">
-        <img src="../../../assets/images/category/cat_herb.png" alt="">
-      </a>
+    <h2>หมวดหมู่สินค้าสำ</h2>
+    <a href="#" class="category-item">
+      <img src="../../../assets/images/category/cat_restore.png" alt="">
+    </a>
+    <a href="#" class="category-item">
+      <img src="../../../assets/images/category/cat_lookafter.png" alt="">
+    </a>
+    <a href="#" class="category-item">
+      <img src="../../../assets/images/category/cat_dentistry.png" alt="">
+    </a>
+    <a href="#" class="category-item">
+      <img src="../../../assets/images/category/cat_cosmeceuticals.png" alt="">
+    </a>
+    <a href="#" class="category-item">
+      <img src="../../../assets/images/category/cat_herb.png" alt="">
+    </a>
   </div>
 </div>

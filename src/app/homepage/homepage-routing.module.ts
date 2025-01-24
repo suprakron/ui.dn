@@ -4,8 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { BannerComponent } from './banner/banner.component';
 import { HeaderComponent } from './header/header.component';
 import { BodyhomepageComponent } from './bodyhomepage/bodyhomepage.component';
-import { AlertloginComponent } from './alertlogin/alertlogin.component';
-import { AlertregisterComponent } from './alertregister/alertregister.component';
+
 import { ProductallComponent } from './productall/productall.component';
 import { PromotionComponent } from './promotion/promotion.component';
 import { CouponmyselfComponent } from './couponmyself/couponmyself.component';
@@ -14,6 +13,7 @@ import { CartComponent } from './cart/cart.component';
 import { CartPaymentComponent } from './cart-payment/cart-payment.component';
 import { ReviewcustomerComponent } from './reviewcustomer/reviewcustomer.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { IndexComponent } from './index/index.component';
  
 
 
@@ -30,14 +30,7 @@ const routes: Routes = [
     path: 'header',
     component: HeaderComponent
   },
-  {
-    path: 'signin',
-    component: AlertloginComponent
-  },
-  {
-    path: 'signup',
-    component: AlertregisterComponent
-  },
+
   {
     path: 'productall',
     component: ProductallComponent
@@ -70,8 +63,10 @@ const routes: Routes = [
     path: 'about',
     component: AboutusComponent
   },
-
-
+  {
+    path: 'index',
+    component: IndexComponent
+  },
 ];
 
 @NgModule({

@@ -10,6 +10,10 @@ import { DatapersonnalComponent } from './datapersonnal/datapersonnal.component'
 import { AccountbankComponent } from './accountbank/accountbank.component';
 import { DataashippingComponent } from './dataashipping/dataashipping.component';
 import { CouponComponent } from './coupon/coupon.component';
+import { HeaderComponent } from "../homepage/header/header.component";
+import { FooterComponent } from "../homepage/footer/footer.component";
+import { DatabusinessComponent } from './databusiness/databusiness.component';
+import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 
 
 @NgModule({
@@ -20,12 +24,16 @@ import { CouponComponent } from './coupon/coupon.component';
     DatapersonnalComponent,
     AccountbankComponent,
     DataashippingComponent,
-    CouponComponent
+    CouponComponent,
+    DatabusinessComponent,
+    ForgotpasswordComponent,
   ],
     imports: [
-        CommonModule,
-        ProfileRoutingModule,
-      ]
+    CommonModule,
+    ProfileRoutingModule,
+    HeaderComponent,
+    FooterComponent
+]
   })
   export class ProfileModule {}
   

@@ -1,15 +1,16 @@
+<app-header></app-header>
 <div class="dataarea">
   <div class="profile-container">
 
     <!-- ส่วนโปรไฟล์ -->
     <div class="profile-section">
       <div class="profile-icon">
-        <i class="icon-user"></i>
+        <img src="../../../assets/images/profile.png" alt="">
       </div>
       <div class="profile-details">
-      
+
         <p class="profile-name">สิริวิชญ์</p>
-        <a href="">  <i class="bi bi-pencil-square"></i> แก้ไขข้อมูลส่วนตัว</a>
+        <a href=""> <i class="bi bi-pencil-square"></i> แก้ไขข้อมูลส่วนตัว</a>
       </div>
     </div>
 
@@ -23,12 +24,24 @@
             บัญชีของฉัน
           </label>
           <ul class="menu-child">
-            <li class="menu-child-item"><a href="/datapersonnal"><p>ข้อมูลส่วนบุคคล</p></a></li>
-            <li class="menu-child-item"><a href="/accountbank"><p>บัญชีธนาคาร & บัตร</p></a></li>
-            <li class="menu-child-item"><a href="/databusiness"><p>ข้อมูลธุรกิจ</p></a></li>
-            <li class="menu-child-item"><a href="/datashipping"><p>ข้อมูลการจัดส่ง</p></a></li>
-            <li class="menu-child-item"><a href="/coupon"><p>คูปองของฉัน</p></a></li>
-            <li class="menu-child-item"><a href="/forgot"><p>เปลี่ยนรหัสผ่าน</p></a></li>
+            <li class="menu-child-item"><a href="/datapersonnal">
+                <p>ข้อมูลส่วนบุคคล</p>
+              </a></li>
+            <li class="menu-child-item"><a href="/accountbank">
+                <p>บัญชีธนาคาร & บัตร</p>
+              </a></li>
+            <li class="menu-child-item"><a href="/databusiness">
+                <p>ข้อมูลธุรกิจ</p>
+              </a></li>
+            <li class="menu-child-item"><a href="/datashipping">
+                <p>ข้อมูลการจัดส่ง</p>
+              </a></li>
+            <li class="menu-child-item"><a href="/coupon">
+                <p>คูปองของฉัน</p>
+              </a></li>
+            <li class="menu-child-item"><a href="/forgot">
+                <p>เปลี่ยนรหัสผ่าน</p>
+              </a></li>
           </ul>
         </li>
         <li class="menu-item has-collapsible">
@@ -60,13 +73,13 @@
         <p>จัดการข้อมูลส่วนตัวของคุณเพื่อความปลอดภัยของบัญชีผู้ใช้นี้</p>
       </div>
       <hr />
-   
+
       <div class="form-content">
         <div class="form-left">
 
           <label>ชื่อ - นามสกุล*</label>
           <input type="text" placeholder="สิริวิชญ์" required />
-         
+
           <label>หมายเลขโทรศัพท์*</label>
           <input type="text" placeholder="080-245-5193" required />
           <label>อีเมล*</label>
@@ -93,7 +106,10 @@
         <div class="form-right">
           <div class="profile-picture">
             <div class="image-placeholder">
+              <img src="../../../assets/images/profile.png" alt="">
+              <!-- <i class="fas fa-user"></i> -->
             </div>
+
             <input type="file" name="file" id="file-upload" />
             <label for="file-upload" class="file-label">เลือกรูป</label>
             <p class="file-info">ขนาดไฟล์: สูงสุด 1 MB<br />ไฟล์ที่รองรับ: JPEG, PNG</p>
@@ -109,10 +125,10 @@
           <h2>Coin สะสมของฉัน</h2>
           <p>เริ่มสะสม 1 พ.ย.- 31 ธ.ค. 67 ใช้ได้ถึง 31 มกราคม 2568</p>
         </div>
-       
+
         <div class="coin-content">
           <h1>1,000 Coin</h1>
-          <a name="" id="" class="btn btn-primary" href="#" role="button">แลกคูปองส่วนลด</a>
+          <a   class="btn btn-primary" href="#"  >แลกคูปองส่วนลด</a>
         </div>
       </div>
 
@@ -127,34 +143,38 @@
           <div class="progress-container">
             <div class="progress-bar">
               <div class="step completed">
-                <div class="icon bronze"></div>
-                <p>Scũ Bronze</p>
+                <img src="../../../assets/images/icon/icon_bronze.png" alt="">
+                <p>ระดับ Bronze <i class="fas fa-info-circle"></i></p>
               </div>
               <div class="step active">
-                <div class="icon silver"></div>
-                <p>Scũ Silver</p>
+                <img src="../../../assets/images/icon/icon_silver.png" alt="">
+                <p>ระดับ Silver <i class="fas fa-info-circle"></i></p>
               </div>
               <div class="step">
-                <div class="icon gold"></div>
-                <p>Scũ Gold</p>
+                <img src="../../../assets/images/icon/icon_gold.png" alt="">
+                <p>ระดับ Gold <i class="fas fa-info-circle"></i> </p>
               </div>
               <div class="step">
-                <div class="icon platinum"></div>
-                <p>Scũ Platinum</p>
+                <img src="../../../assets/images/icon/icon_platinum.png" alt="">
+                <p>ระดับ Platinum <i class="fas fa-info-circle"></i></p>
               </div>
               <div class="progress-line"></div>
-
             </div>
-    
-          </div>
 
+
+          </div>
         </div>
         <div class="coin-content">
           <p>การคำนวณระดับสมาชิก</p>
-          <i class="fas fa-info-circle"></i>
+          <div class="text-tooltip">
+            <i class="fas fa-info-circle"></i>
+            
+          </div>
+          
         </div>
       </div>
 
     </div>
   </div>
 </div>
+<app-footer></app-footer>

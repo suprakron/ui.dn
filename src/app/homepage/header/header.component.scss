@@ -1,10 +1,6 @@
- 
-
-
 * {
-  box-sizing: border-box;  
+  box-sizing: border-box;
 }
-
 
 .nav-area {
   display: flex;
@@ -14,20 +10,19 @@
   top: 0;
   width: 100%;
   box-sizing: border-box;
-
 }
 
 .banner img {
   display: block;
   align-items: center;
-  width: 100%;  
-  height: auto;  
+  width: 100%;
+  height: auto;
 }
 
 .header {
   display: flex;
   height: 100px;
-  width: 100%; 
+  width: 100%;
   background-color: #633ec3;
   margin: 0;
   padding: 0;
@@ -36,17 +31,19 @@
 .display-title {
   display: flex;
   height: 70px;
-  width: 100%;  
+  width: 100%;
   gap: 5;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
   background-color: #f5f4f7;
-  .display-action{
+
+  .display-action {
     display: flex;
     margin-left: 50px;
     gap: 10px;
   }
-  p{
-     color: #575f6b;
+
+  p {
+    color: #575f6b;
 
   }
 }
@@ -127,6 +124,7 @@
 
 .quota .quota-text {
   font-size: 16px;
+  color: #fff;
 }
 
 .con-icons {
@@ -134,117 +132,139 @@
   align-items: center;
   gap: 20px;
   margin-left: 20px;
+  margin-right: 100px;
+
+  .icon-cart,
+  .icon-favorite,
+  .icon-profile {
+    position: relative;
+    background-color: #ffffff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon-cart img,
+  .icon-profile img {
+    width: 25px;  
+    height: 25px;
+    border-radius: 50%;  
+  }
+ 
+
+
+  .badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #ff6347;
+    color: #fff;
+    font-size: 10px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .status-dot {
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    width: 10px;
+    height: 10px;
+    background: #4caf50;
+    border: 2px solid #fff;
+    border-radius: 50%;
+  }
 }
 
-.con-icons .icon-favorite,
-.con-icons .icon-cart,
-.con-icons .icon-profile {
-  position: relative;
-  cursor: pointer;
-}
 
-.con-icons .badge {
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  background: #ff6347;
-  color: #fff;
-  font-size: 10px;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.icon-profile img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-
-.status-dot {
-  position: absolute;
-  bottom: 3px;
-  right: 3px;
-  width: 10px;
-  height: 10px;
-  background: #4caf50;
-  border: 2px solid #fff;
-  border-radius: 50%;
-}
-/* Responsive Styles */
-
-/* Small devices (max-width: 576px) */
-@media (max-width: 576px) {
+@media (max-width: 1024px) {
   .header {
-    height: 80px;
     flex-direction: column;
-  }
-
-  .icon-menu {
-    gap: 10px;
-    font-size: 14px;
-  }
-
-  .search-bar {
-    max-width: 200px;
-    margin: 10px 0;
+    height: auto;
+    padding: 20px;
   }
 
   .logo img {
-    height: 60px;
-  }
-
-  .con-icons {
-    gap: 10px;
-  }
-}
-
-/* Medium devices (min-width: 577px and max-width: 768px) */
-@media (min-width: 577px) and (max-width: 768px) {
-  .header {
-    height: 90px;
+    width: 180px;
+    height: auto;
   }
 
   .icon-menu {
-    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;  
   }
 
   .search-bar {
-    max-width: 250px;
-  }
-
-  .logo img {
-    height: 70px;
+    width: 80%; 
+    margin-top: 10px;
   }
 
   .con-icons {
+    justify-content: center;
     gap: 15px;
   }
 }
 
- 
-@media (min-width: 769px) {
+/* สำหรับ Desktop ความกว้างมากกว่า 1200px */
+@media (min-width: 1200px) {
   .header {
+    padding: 0 80px;
+  }
+
+  .logo img {
+    width: 220px;
     height: 100px;
   }
 
   .icon-menu {
-    gap: 30px;
+    gap: 50px;
   }
 
   .search-bar {
-    max-width: 300px;
+    max-width: 500px;
   }
 
-  .logo img {
-    height: 80px;
+  .quota .quota-text {
+    font-size: 20px;
   }
 
   .con-icons {
-    gap: 20px;
+    gap: 40px;
   }
 }
+@media (max-width: 768px) {
+  .header {
+    padding: 10px;
+  }
 
+  .logo img {
+    width: 150px;
+    height: 60px;
+    margin: 10px 0;
+  }
+
+  .icon-menu {
+    display: none; /* ซ่อนเมนูหลัก */
+  }
+
+  .search-bar {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .quota .quota-text {
+    font-size: 14px;
+  }
+
+  .con-icons {
+    gap: 10px;
+  }
+}

@@ -1,14 +1,15 @@
+<app-header></app-header>
 <div class="dataarea">
 
   <div class="profile-container">
     <!-- ส่วนโปรไฟล์ -->
     <div class="profile-section">
       <div class="profile-icon">
-        <i class="icon-user"></i>
+        <img src="../../../assets/images/profile.png" alt="">
       </div>
       <div class="profile-details">
         <p class="profile-name">สิริวิชญ์</p>
-        <a href=""> <i class="bi bi-pencil-square"></i> แก้ไขข้อมูลส่วนตัว</a>
+        <a href="#"> <i class="bi bi-pencil-square"></i> แก้ไขข้อมูลส่วนตัว</a>
       </div>
     </div>
     <!-- ส่วนเมนู -->
@@ -70,21 +71,22 @@
       <div class="tabs">
         <div class="tabs-left">
           <p>ค้นหา</p>
-          <div class="status-item">
+          <div class="status-items">
             รหัสคำสั่งซื้อ
           </div>
-          <div class="status-item">สินค้า</div>
-          <div class="status-item">วัน/เดือน</div>
+          <div class="status-items">สินค้า</div>
+          <div class="status-items">วัน/เดือน</div>
         </div>
         <div class="search-bar">
-          <input type="text" placeholder="กรอก Order Code ของคุณ..." />
-
-          <div class="status-item"> ค้นหา </div>
+          <div class="search-input-wrapper">
+            <i class="bi bi-search"></i>
+            <input type="text" placeholder="กรอก Order Code ของคุณ..." />
+          </div>
+          <a class="status-search">ค้นหา</a>
         </div>
+        
       </div>
     </div>
-
-
     <hr />
     <div class="status-container">
       <div class="status-item active">ทั้งหมด (2)</div>
@@ -120,7 +122,8 @@
         </div>
 
         <div class="status">
-          <div class="status-item">
+
+          <div class="status-item-order">
             <div class="yellow-dot ">
             </div>
             <p>ที่ต้องจัดส่ง</p>
@@ -159,7 +162,7 @@
             NHYAPP50</p>
         </div>
         <div class="status">
-          <div class="status-item">
+          <div class="status-item-order">
             <div class="green-dot">
             </div>
             <p>สำเร็จ</p>
@@ -196,7 +199,7 @@
             NHYAPP50</p>
         </div>
         <div class="status">
-          <div class="status-item">
+          <div class="status-item-order">
             <div class="blue-dot">
             </div>
             <p>ที่ต้องได้รับ</p>
@@ -233,7 +236,7 @@
             NHYAPP50</p>
         </div>
         <div class="status">
-          <div class="status-item">
+          <div class="status-item-order">
             <div class="orange-dot">
             </div>
             <p>ที่ต้องชำระ</p>
@@ -270,7 +273,7 @@
             NHYAPP50</p>
         </div>
         <div class="status">
-          <div class="status-item">
+          <div class="status-item-order">
             <div class="red-dot">
             </div>
             <p>ยกเลิก</p>
@@ -297,3 +300,4 @@
     </div>
   </div>
 </div>
+<app-footer></app-footer>

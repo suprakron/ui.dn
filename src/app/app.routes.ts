@@ -9,8 +9,7 @@ import { DatabusinessComponent } from './profile/databusiness/databusiness.compo
 import { DataashippingComponent } from './profile/dataashipping/dataashipping.component';
 import { CouponComponent } from './profile/coupon/coupon.component';
 import { ForgotpasswordComponent } from './profile/forgotpassword/forgotpassword.component';
-import { AlertloginComponent } from './homepage/alertlogin/alertlogin.component';
-import { AlertregisterComponent } from './homepage/alertregister/alertregister.component';
+ 
 
  
 import { ProductdetailComponent } from './product/productdetail/productdetail.component';
@@ -22,6 +21,7 @@ import { CartComponent } from './homepage/cart/cart.component';
 import { CartPaymentComponent } from './homepage/cart-payment/cart-payment.component';
 import { ReviewcustomerComponent } from './homepage/reviewcustomer/reviewcustomer.component';
 import { AboutusComponent } from './homepage/aboutus/aboutus.component';
+import { IndexComponent } from './homepage/index/index.component';
  
 
  
@@ -31,8 +31,10 @@ export const routes: Routes = [
         path: 'homepage',
         loadChildren: () => import('./homepage/homepage.module').then(m => m.HomeModule)
       },
-      { path: 'signin', component: AlertloginComponent },
-      { path: 'signup', component: AlertregisterComponent },
+      {
+        path: 'index',
+        component: IndexComponent
+      },
         {
           path: 'productall',
           component: ProductallComponent
@@ -93,7 +95,7 @@ export const routes: Routes = [
         redirectTo:'homepage',pathMatch:'full',
     },  {
         path:'**',
-        redirectTo:'profile' 
+        redirectTo:'homepage' 
     }
 ];
 
