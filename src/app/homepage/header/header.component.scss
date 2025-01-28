@@ -26,6 +26,20 @@
   background-color: #633ec3;
   margin: 0;
   padding: 0;
+  .logo{
+    img {
+      width: 150px;
+      height: 80px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      margin-left: 120px;
+      margin-right: 50px;
+      color: #ffffff;
+
+      
+    }
+    
+  }
 }
 
 .display-title {
@@ -48,14 +62,6 @@
   }
 }
 
-.logo img {
-  width: 190px;
-  height: 80px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  margin-left: 120px;
-  margin-right: 50px;
-}
 
 .detail-header {
   display: flex;
@@ -183,85 +189,66 @@
 }
 
 
-
-@media (max-width: 1024px) {
+ /* Responsive Design */
+@media (max-width: 1200px) {
   .header {
     flex-direction: column;
     height: auto;
-    padding: 20px;
+    padding: 10px;
+  }
+
+  .icon-menu {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .search-bar {
+    max-width: 250px;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
   }
 
   .logo img {
-    width: 180px;
-    height: auto;
+    margin: 0 auto;
   }
 
   .icon-menu {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;  
+    gap: 10px;
   }
 
   .search-bar {
-    width: 80%; 
-    margin-top: 10px;
+    max-width: 200px;
   }
 
   .con-icons {
     justify-content: center;
-    gap: 15px;
   }
 }
 
-/* สำหรับ Desktop ความกว้างมากกว่า 1200px */
-@media (min-width: 1200px) {
-  .header {
-    padding: 0 80px;
-  }
-
-  .logo img {
-    width: 220px;
-    height: 100px;
-  }
-
+@media (max-width: 480px) {
   .icon-menu {
-    gap: 50px;
-  }
-
-  .search-bar {
-    max-width: 500px;
-  }
-
-  .quota .quota-text {
-    font-size: 20px;
-  }
-
-  .con-icons {
-    gap: 40px;
-  }
-}
-@media (max-width: 768px) {
-  .header {
-    padding: 10px;
-  }
-
-  .logo img {
-    width: 150px;
-    height: 60px;
-    margin: 10px 0;
-  }
-
-  .icon-menu {
-    display: none; /* ซ่อนเมนูหลัก */
-  }
-
-  .search-bar {
-    width: 100%;
-    margin: 10px 0;
-  }
-
-  .quota .quota-text {
     font-size: 14px;
+    gap: 5px;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .search-bar input {
+    margin-bottom: 5px;
+  }
+
+  .quota {
+    display: none;
   }
 
   .con-icons {
