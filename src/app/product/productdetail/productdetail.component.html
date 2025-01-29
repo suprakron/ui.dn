@@ -55,9 +55,11 @@
                     </div>
                 </div>
                 <div class="price">
-                    <h3>ราคาสินค้า : 639.00 บาท
-                    </h3>
-                    <p>฿749.00</p>
+                    <p class="title-price">
+                        ราคาสินค้า: <span class="money">639.00</span> บาท
+                      </p>
+                      
+                    <p class="price-down">฿749.00</p>
                 </div>
                 <div class="energy-tube">
                     <div class="energy">
@@ -212,158 +214,177 @@
                 </div>
             </div>
         </dialog>
+        
     </div>
 
 
 
 
     <div class="change-detailproduct">
-        <ul>
-            <li [class.active]="isProductDetailActive" (click)="toggleTab('detail')">รายละเอียดสินค้า</li>
-            <li [class.active]="!isProductDetailActive" (click)="toggleTab('similar')">สินค้าใกล้เคียง</li>
-        </ul>
-        <div class="tab-content">
-            <div *ngIf="isProductDetailActive">
-                <h2>รายละเอียดสินค้า</h2>
-                <ul>
-                    <li>ขนาดแพ็ค: กล่อง</li>
-                    <li>หมวดหมู่: ยา</li>
-                    <li>ประเภท: ยา-แผนปัจจุบัน</li>
-                    <li>สรรพคุณ: แก้ปวด/ลดไข้ (NSAIDs)</li>
-                    <li>ข้อบ่งใช้: บรรเทาอาการเจ็บปวด ภาวะอักเสบของข้อ ไขข้ออักเสบ (Osteoarthritis) ไขข้อกระดูกสันหลังลักเลบ (Ankylosing Spondylitis) 
-                    <li>ปวดท้องประจำเดือน ปวดฟัน </li>
-                    <li>วิธีการใช้: รับประทานครั้งละ 1 เม็ด วันละ 1 ครั้ง หลังอาหารเช้า</li>
-                    <li>ข้อควรระวัง: รับประทานหลังอาหารกันที</li>
-                    <li>อาการข้างเคียง:รู้สึกไม่สบายตัวเล็กน้อย มีลมในท้อง  ท้องเสีย ท้องผูก เจ็บคอมีอาการคล้ายเป็นหวัด  
-                    </li>
-                    <li>ส่วนประกอบสินค้า: Celecoxib 400 mg</li>
-                </ul>
-            </div>
-            <div *ngIf="!isProductDetailActive">
-                <div class="product-branch">
-                    <div class="product">
-                        <div class="head-product">
-                            <div class="discount-badge">
-                                <img src="../../../assets/images/icon/coin.png">
-                                <p>โปรโมชั่นปีใหม่</p>
-                            </div>
-                            <div class="wishlist">
-                                <button class="wishlist-btn"> <i class="bi bi-heart"></i></button>
-                                <button class="view-btn">👁</button>
-                            </div>
-                        </div>
-
-                        <img src="../../../assets/images/product/p2.png" alt="Oxecure Serum">
-                        <h4>Oxecure Acne Defense Prebio Serum SPC (Bottle/20ml)</h4>
-                        <div class="product-details">
-                            <div class="tube">
-                                <div class="fill"><span>สินค้าคงเหลือ: 10</span></div>
-                            </div>
-                            <div class="btn-action">
-                                <a class="btn-buy" href="#">
-                                    <img src="../../../assets/images/icon/view_report.png" alt="Buy Icon">
-                                    <span>ดูรายละเอียด</span>
-                                </a>
-                                <a class="btn-add" href="#">
-                                    <img src="../../../assets/images/icon/add_cart.png" alt="Add Icon">
-                                    <span>เพิ่มไปยังรถเข็น</span>
-                                </a>
-                            </div>
-                        </div>
+        <div class="btn-change-detailproduct">
+            <a class="detail-btn"   [class.active]="isProductDetailActive" (click)="toggleTab('detail')">รายละเอียดสินค้า</a>
+            <a class="location-btn"  [class.active]="!isProductDetailActive" (click)="toggleTab('similar')">สินค้าใกล้เคียง</a>
+            <div class="tab-content">
+                <div *ngIf="isProductDetailActive">
+                    <div class="detail-text">
+                        <ul>
+                            <li>ขนาดแพ็ค: กล่อง</li>
+                            <li>หมวดหมู่: ยา</li>
+                            <li>ประเภท: ยา-แผนปัจจุบัน</li>
+                            <li>สรรพคุณ: แก้ปวด/ลดไข้ (NSAIDs)</li>
+                            <li>ข้อบ่งใช้: บรรเทาอาการเจ็บปวด ภาวะอักเสบของข้อ ไขข้ออักเสบ (Osteoarthritis) ไขข้อกระดูกสันหลังลักเลบ (Ankylosing Spondylitis) 
+                            <li>ปวดท้องประจำเดือน ปวดฟัน </li>
+                            <li>วิธีการใช้: รับประทานครั้งละ 1 เม็ด วันละ 1 ครั้ง หลังอาหารเช้า</li>
+                            <li>ข้อควรระวัง: รับประทานหลังอาหารกันที</li>
+                            <li>อาการข้างเคียง:รู้สึกไม่สบายตัวเล็กน้อย มีลมในท้อง  ท้องเสีย ท้องผูก เจ็บคอมีอาการคล้ายเป็นหวัด  
+                            </li>
+                            <li>ส่วนประกอบสินค้า: Celecoxib 400 mg</li>
+                        </ul>
                     </div>
-                    <div class="product">
-                        <div class="head-product">
-                            <div class="discount-badge">
-                                <img src="../../../assets/images/icon/coin.png">
-                                <p>โปรโมชั่นปีใหม่</p>
-                            </div>
-                            <div class="wishlist">
-                                <button class="wishlist-btn"> <i class="bi bi-heart"></i></button>
-                                <button class="view-btn">👁</button>
-                            </div>
-                        </div>
+                </div>
+                <div *ngIf="!isProductDetailActive">
+                    <div class="product-branch">
 
-                        <img src="../../../assets/images/product/p2.png" alt="Oxecure Serum">
-                        <h4>Oxecure Acne Defense Prebio Serum SPC (Bottle/20ml)</h4>
-                        <div class="product-details">
-                            <div class="tube">
-                                <div class="fill"><span>สินค้าคงเหลือ: 10</span></div>
+                        <div class="product">
+                            <div class="head-product">
+                                <div class="discount-badge">
+                                    <img src="../../../assets/images/icon/coin.png">
+                                    <p>โปรโมชั่นปีใหม่</p>
+                                </div>
+                                <div class="wishlist">
+                                    <button class="wishlist-btn"> <i class="bi bi-heart"></i></button>
+                                    <button class="view-btn">👁</button>
+                                </div>
                             </div>
-                            <div class="btn-action">
-                                <a class="btn-buy" href="#">
-                                    <img src="../../../assets/images/icon/view_report.png" alt="Buy Icon">
-                                    <span>ดูรายละเอียด</span>
-                                </a>
-                                <a class="btn-add" href="#">
-                                    <img src="../../../assets/images/icon/add_cart.png" alt="Add Icon">
-                                    <span>เพิ่มไปยังรถเข็น</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <div class="head-product">
-                            <div class="discount-badge">
-                                <img src="../../../assets/images/icon/coin.png">
-                                <p>โปรโมชั่นปีใหม่</p>
-                            </div>
-                            <div class="wishlist">
-                                <button class="wishlist-btn"> <i class="bi bi-heart"></i></button>
-                                <button class="view-btn">👁</button>
-                            </div>
-                        </div>
-
-                        <img src="../../../assets/images/product/p2.png" alt="Oxecure Serum">
-                        <h4>Oxecure Acne Defense Prebio Serum SPC (Bottle/20ml)</h4>
-                        <div class="product-details">
-                            <div class="tube">
-                                <div class="fill"><span>สินค้าคงเหลือ: 10</span></div>
-                            </div>
-                            <div class="btn-action">
-                                <a class="btn-buy" href="#">
-                                    <img src="../../../assets/images/icon/view_report.png" alt="Buy Icon">
-                                    <span>ดูรายละเอียด</span>
-                                </a>
-                                <a class="btn-add" href="#">
-                                    <img src="../../../assets/images/icon/add_cart.png" alt="Add Icon">
-                                    <span>เพิ่มไปยังรถเข็น</span>
-                                </a>
+    
+                            <img src="../../../assets/images/product/p2.png" alt="Oxecure Serum">
+                            <h4>Oxecure Acne Defense Prebio Serum SPC (Bottle/20ml)</h4>
+                            <div class="product-details">
+                                <div class="tube">
+                                    <div class="fill"><span>สินค้าคงเหลือ: 10</span></div>
+                                </div>
+                                <div class="btn-action">
+                                    <a class="btn-buy" href="#">
+                                        <img src="../../../assets/images/icon/view_report.png" alt="Buy Icon">
+                                        <span>ดูรายละเอียด</span>
+                                    </a>
+                                    <a class="btn-add" href="#">
+                                        <img src="../../../assets/images/icon/add_cart.png" alt="Add Icon">
+                                        <span>เพิ่มไปยังรถเข็น</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="product">
-                        <div class="head-product">
-                            <div class="discount-badge">
-                                <img src="../../../assets/images/icon/coin.png">
-                                <p>โปรโมชั่นปีใหม่</p>
+                        <div class="product">
+                            <div class="head-product">
+                                <div class="discount-badge">
+                                    <img src="../../../assets/images/icon/coin.png">
+                                    <p>โปรโมชั่นปีใหม่</p>
+                                </div>
+                                <div class="wishlist">
+                                    <button class="wishlist-btn"> <i class="bi bi-heart"></i></button>
+                                    <button class="view-btn">👁</button>
+                                </div>
                             </div>
-                            <div class="wishlist">
-                                <button class="wishlist-btn"> <i class="bi bi-heart"></i></button>
-                                <button class="view-btn">👁</button>
+    
+                            <img src="../../../assets/images/product/p2.png" alt="Oxecure Serum">
+                            <h4>Oxecure Acne Defense Prebio Serum SPC (Bottle/20ml)</h4>
+                            <div class="product-details">
+                                <div class="tube">
+                                    <div class="fill"><span>สินค้าคงเหลือ: 10</span></div>
+                                </div>
+                                <div class="btn-action">
+                                    <a class="btn-buy" href="#">
+                                        <img src="../../../assets/images/icon/view_report.png" alt="Buy Icon">
+                                        <span>ดูรายละเอียด</span>
+                                    </a>
+                                    <a class="btn-add" href="#">
+                                        <img src="../../../assets/images/icon/add_cart.png" alt="Add Icon">
+                                        <span>เพิ่มไปยังรถเข็น</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-
-                        <img src="../../../assets/images/product/p2.png" alt="Oxecure Serum">
-                        <h4>Oxecure Acne Defense Prebio Serum SPC (Bottle/20ml)</h4>
-                        <div class="product-details">
-                            <div class="tube">
-                                <div class="fill"><span>สินค้าคงเหลือ: 10</span></div>
+                        <div class="product">
+                            <div class="head-product">
+                                <div class="discount-badge">
+                                    <img src="../../../assets/images/icon/coin.png">
+                                    <p>โปรโมชั่นปีใหม่</p>
+                                </div>
+                                <div class="wishlist">
+                                    <button class="wishlist-btn"> <i class="bi bi-heart"></i></button>
+                                    <button class="view-btn">👁</button>
+                                </div>
                             </div>
-                            <div class="btn-action">
-                                <a class="btn-buy" href="#">
-                                    <img src="../../../assets/images/icon/view_report.png" alt="Buy Icon">
-                                    <span>ดูรายละเอียด</span>
-                                </a>
-                                <a class="btn-add" href="#">
-                                    <img src="../../../assets/images/icon/add_cart.png" alt="Add Icon">
-                                    <span>เพิ่มไปยังรถเข็น</span>
-                                </a>
+    
+                            <img src="../../../assets/images/product/p2.png" alt="Oxecure Serum">
+                            <h4>Oxecure Acne Defense Prebio Serum SPC (Bottle/20ml)</h4>
+                            <div class="product-details">
+                                <div class="tube">
+                                    <div class="fill"><span>สินค้าคงเหลือ: 10</span></div>
+                                </div>
+                                <div class="btn-action">
+                                    <a class="btn-buy" href="#">
+                                        <img src="../../../assets/images/icon/view_report.png" alt="Buy Icon">
+                                        <span>ดูรายละเอียด</span>
+                                    </a>
+                                    <a class="btn-add" href="#">
+                                        <img src="../../../assets/images/icon/add_cart.png" alt="Add Icon">
+                                        <span>เพิ่มไปยังรถเข็น</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="head-product">
+                                <div class="discount-badge">
+                                    <img src="../../../assets/images/icon/coin.png">
+                                    <p>โปรโมชั่นปีใหม่</p>
+                                </div>
+                                <div class="wishlist">
+                                    <button class="wishlist-btn"> <i class="bi bi-heart"></i></button>
+                                    <button class="view-btn">👁</button>
+                                </div>
+                            </div>
+    
+                            <img src="../../../assets/images/product/p2.png" alt="Oxecure Serum">
+                           
+                            <div class="circle-promotion">
+                                <div class="con-recommend">
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    <p>สินค้าแนะนำ</p>
+                                </div>
+                                <div class="con-delivery">
+                                    <i class="bi bi-truck-front"></i>
+                                    <p>ส่งฟรี</p>
+                                </div>
+                                <div class="con-productnew">
+                                    <i class="bi bi-bag-fill bag-front"></i>
+                                    <p>สินค้่าใหม่</p>
+                                </div>
+                            </div>
+                            <h4>Oxecure Acne Defense Prebio Serum SPC (Bottle/20ml)</h4>
+                            <div class="product-details">
+                                <div class="tube">
+                                    <div class="fill"><span>สินค้าคงเหลือ: 10</span></div>
+                                </div>
+                                <div class="btn-action">
+                                    <a class="btn-buy" href="#">
+                                        <img src="../../../assets/images/icon/view_report.png" alt="Buy Icon">
+                                        <span>ดูรายละเอียด</span>
+                                    </a>
+                                    <a class="btn-add" href="#">
+                                        <img src="../../../assets/images/icon/add_cart.png" alt="Add Icon">
+                                        <span>เพิ่มไปยังรถเข็น</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
     
 </div>
